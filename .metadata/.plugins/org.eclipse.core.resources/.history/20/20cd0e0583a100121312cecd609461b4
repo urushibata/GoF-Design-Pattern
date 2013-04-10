@@ -1,0 +1,25 @@
+/**
+ * 
+ */
+package command.cmmand;
+
+import java.util.ArrayDeque;
+
+/**
+ * @author urushibata
+ *
+ */
+public class MacroCommand implements Command {
+
+	/* (非 Javadoc)
+	 * @see command.cmmand.Command#execute()
+	 */
+	//命令の集合
+	private ArrayDeque<Command> commands = new ArrayDeque<Command>();
+	@Override
+	public void execute() {
+		// TODO 自動生成されたメソッド・スタブ
+
+	}
+
+}

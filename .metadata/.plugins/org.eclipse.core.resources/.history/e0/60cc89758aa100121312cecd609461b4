@@ -1,0 +1,27 @@
+/**
+ * 
+ */
+package command.drawer;
+
+import java.awt.Canvas;
+
+/**
+ * @author urushibata
+ *
+ */
+public class DrawCanvas extends Canvas implements Drawable {
+	// •`‰æF
+	private Color color = Color.red;
+	// •`‰æ‚·‚é“_‚Ì”¼Œa
+	private int radius = 6;
+
+	/* (”ñ Javadoc)
+	 * @see command.drawer.Drawable#draw(int, int)
+	 */
+	@Override
+	public void draw(int x, int y) {
+		
+
+	}
+
+}

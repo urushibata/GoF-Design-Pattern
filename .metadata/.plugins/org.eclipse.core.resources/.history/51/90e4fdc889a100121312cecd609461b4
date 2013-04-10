@@ -1,0 +1,19 @@
+package command.drawer;
+
+import java.awt.Point;
+
+import command.cmmand.Command;
+
+public class DrawCommand implements Command {
+
+	// •`‰æ‘ÎÛ
+	protected Drawable drawable;
+	// •`‰æˆÊ’u
+	private Point position;
+
+	@Override
+	public void execute() {
+		drawable.draw(position.x,position.y);
+	}
+
+}

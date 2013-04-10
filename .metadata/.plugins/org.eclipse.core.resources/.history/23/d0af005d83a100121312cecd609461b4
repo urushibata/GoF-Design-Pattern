@@ -1,0 +1,32 @@
+/**
+ * 
+ */
+package command.cmmand;
+
+import java.util.ArrayDeque;
+import java.util.Iterator;
+
+/**
+ * @author urushibata
+ * 
+ */
+public class MacroCommand implements Command {
+
+	/*
+	 * (îÒ Javadoc)
+	 * 
+	 * @see command.cmmand.Command#execute()
+	 */
+	// ñΩóﬂÇÃèWçá
+	private ArrayDeque<Command> commands = new ArrayDeque<Command>();
+
+	// é¿çs
+	@Override
+	public void execute() {
+		Iterator<E> it = commands.iterator();
+		while(it.hasNext()){
+			
+		}
+	}
+
+}

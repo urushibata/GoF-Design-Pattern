@@ -1,0 +1,13 @@
+package command.drawer;
+
+import command.cmmand.Command;
+
+public class DrawCommand implements Command {
+
+		protected Drawable drawable;
+	@Override
+	public void execute() {
+		//•`‰æ‘ÎÛ
+	}
+
+}

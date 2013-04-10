@@ -1,0 +1,21 @@
+/**
+ * 
+ */
+package command.cmmand;
+
+/**
+ * @author urushibata
+ *
+ */
+public class MacroCommand implements Command {
+
+	/* (非 Javadoc)
+	 * @see command.cmmand.Command#execute()
+	 */
+	@Override
+	public void execute() {
+		// TODO 自動生成されたメソッド・スタブ
+
+	}
+
+}

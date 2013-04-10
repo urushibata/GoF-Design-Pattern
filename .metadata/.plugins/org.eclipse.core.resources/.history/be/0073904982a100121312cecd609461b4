@@ -1,0 +1,5 @@
+package command.cmmand;
+
+public interface Command {
+	public abstract void execute();
+}
