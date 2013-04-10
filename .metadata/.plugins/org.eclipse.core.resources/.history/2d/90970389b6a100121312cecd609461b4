@@ -48,11 +48,10 @@ public class Main extends JFrame implements ActionListener,
 		canvas.addMouseMotionListener(this);
 		clearButton.addActionListener(this);
 
-		// Boxクラスはコンポーネントを作成するクラス
 		// X_AXIS コンポーネントを左から右に並べて表示する。
 		Box buttonBox = new Box(BoxLayout.X_AXIS);
 		buttonBox.add(clearButton);
-		// Y_AXIS コンポーネントを上から下に並べて表示する。
+		// Y_AXIS コンポーネントを左から右に並べて表示する。
 		Box mainBox = new Box(BoxLayout.Y_AXIS);
 		mainBox.add(buttonBox);
 		mainBox.add(canvas);
