@@ -1,5 +1,5 @@
 /**
- * 
+ *
  */
 package command.drawer;
 
@@ -41,14 +41,13 @@ public class DrawCanvas extends Canvas implements Drawable {
 	}
 
 	/*
-	 * (非 Javadoc)
-	 * 
 	 * @see command.drawer.Drawable#draw(int, int)
 	 */
 	@Override
 	public void draw(int x, int y){
 		System.out.println("さて、書くか。");
-		
+		System.out.println("今の色：" + this.color);
+
 		// ComponentクラスのgetGraphicsでGraphicsクラス作成
 		Graphics g = getGraphics();
 		g.setColor(this.color);
@@ -64,12 +63,13 @@ public class DrawCanvas extends Canvas implements Drawable {
 	@Override
 	public void init() {
 		this.color = Color.red;
-		this.radius = 6;
+		this.radius = 3;
 		history.append(new ColorCommand(this, color));
 	}
 
 	@Override
 	public void setColor(Color color){
+		System.out.println("色セット！！→" + color);
 		this.color = color;
 	}
 }

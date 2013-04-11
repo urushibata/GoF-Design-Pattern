@@ -24,4 +24,5 @@
 <fullyQualifiedTypeName name="javax.swing.plaf.ColorChooserUI"/>
 <fullyQualifiedTypeName name="javax.swing.JColorChooser"/>
 <fullyQualifiedTypeName name="java.awt.Color"/>
+<fullyQualifiedTypeName name="javax.swing.JTabbedPane"/>
 </qualifiedTypeNameHistroy>

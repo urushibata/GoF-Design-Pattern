@@ -3,26 +3,25 @@
  */
 package command.command;
 
-import java.util.ArrayDeque;
+//import java.util.ArrayDeque;
 import java.util.LinkedList;
 import java.util.Iterator;
 
 
 /**
  * @author urushibata
- *
+ * 命令の集合クラス
  */
 public class MacroCommand implements Command {
 
 	/*
-	 * (非 Javadoc)
-	 *
 	 * @see command.cmmand.Command#execute()
 	 */
 	// 命令の集合(スタック:LIFO)
-	private ArrayDeque<Command> commands = new ArrayDeque<Command>();
+	//private ArrayDeque<Command> commands = new ArrayDeque<Command>();
 	// 命令の集合(キュー:FIFO)
-	// private LinkedList<Command> commands = new LinkedList<Command>();
+	// LinkedListは実際、両端キュー(deque:デック)であるが、Javaではキュー構造の連結リストがないので両端キューを使用してキュー構造を実装する。
+	private LinkedList<Command> commands = new LinkedList<Command>();
 
 	// 実行
 	@Override
@@ -41,8 +40,10 @@ public class MacroCommand implements Command {
 		// コマンドが自分自身以外の場合
 		if (cmd != this) {
 			// MacroCommandにコマンドを追加
-			// pushは配列の先頭に挿入される。
-			commands.push(cmd);
+			// pushはリストの先頭に挿入される。Stackデータ構造を作成。
+			//commands.push(cmd);
+			// offerはリストの最後尾に挿入される。
+			commands.offer(cmd);
 
 			System.out.println("追加後commands:[");
 			int i = 0;
@@ -59,7 +60,10 @@ public class MacroCommand implements Command {
 		System.out.println("Undo前MacroCommandの中身：" + commands);
 		// コマンドが自分自身以外の場合
 		if (!commands.isEmpty()){
-			commands.pop();
+			// リストの先頭ら命令を一つ削除する。
+			//commands.pop();
+			// リストの最後尾から命令を一つ削除する。
+			commands.pollLast();
 			System.out.println("Undo後MacroCommandの中身：" + commands);
 		}
 	}
