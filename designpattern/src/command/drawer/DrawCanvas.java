@@ -7,21 +7,20 @@ import java.awt.Canvas;
 import java.awt.Color;
 import java.awt.Graphics;
 
-import command.cmmand.MacroCommand;
+import command.command.MacroCommand;
 
 /**
  * @author urushibata
- * 
+ * java.awt.Component→java.awt.Canvasを継承
+ * InterFace Drawableの実装クラス
  */
 public class DrawCanvas extends Canvas implements Drawable {
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 8912999038848526103L;
 	// 描画色
-	private Color color = Color.red;
+	private Color color;
 	// 描画する点の半径
-	private int radius = 6;
+	private int radius;
+	// Mainクラスから渡され、このクラスと共有する。
 	// 履歴
 	private MacroCommand history;
 
@@ -30,10 +29,14 @@ public class DrawCanvas extends Canvas implements Drawable {
 		setSize(width, height);
 		setBackground(Color.white);
 		this.history = history;
+		init();
 	}
 
-	// 履歴全体を再描画
-	public void paint(Graphics g) {
+	// 履歴を描画
+	// Canvas→Componentのpaintコールバックメソッド
+	@Override
+	public void paint(Graphics g){
+		System.out.println("paintメソッド");
 		history.execute();
 	}
 
@@ -43,10 +46,30 @@ public class DrawCanvas extends Canvas implements Drawable {
 	 * @see command.drawer.Drawable#draw(int, int)
 	 */
 	@Override
-	public void draw(int x, int y) {
+	public void draw(int x, int y){
+		System.out.println("さて、書くか。");
+		
+		// ComponentクラスのgetGraphicsでGraphicsクラス作成
 		Graphics g = getGraphics();
 		g.setColor(this.color);
-		g.fillOval(x - this.radius, y - this.radius, this.radius * 2,
-				this.radius * 2);
+		// 塗り潰された円を書く。
+		// 第一引数	左上のX座標
+		// 第二引数	左上のY座標
+		// 第三引数	width
+		// 第四引数	height
+		g.fillOval(x - this.radius, y - this.radius, this.radius * 2, this.radius * 2);
+		System.out.println("はいよ");
+	}
+
+	@Override
+	public void init() {
+		this.color = Color.red;
+		this.radius = 6;
+		history.append(new ColorCommand(this, color));
+	}
+
+	@Override
+	public void setColor(Color color){
+		this.color = color;
 	}
 }

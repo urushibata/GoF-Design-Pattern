@@ -1,7 +1,7 @@
 package command.drawer;
 
 import java.awt.Point;
-import command.cmmand.Command;
+import command.command.Command;
 
 /**
  * @author urush_000
@@ -20,24 +20,19 @@ public class DrawCommand implements Command {
 	 * コンストラクタ
 	 */
 	public DrawCommand(Drawable drawable, Point position) {
-		System.out.println("メンバ変数に追加開始");
 		this.drawable = drawable;
 		this.position = position;
 
-		System.out.println("メンバ変数に追加終了");
-		System.out.println("drawable:" + drawable);
-		System.out.println("position:" + position);
+		System.out.println("追加メンバ変数:drawable:" + drawable + " position:" + position);
+		System.out.println("追加メンバ:" + this);
 	}
 
 	/**
-	 * @author urush_000
-	 *
+	 * メンバ変数のdrawable<DrawCanvas>のdrawメソッド実行
 	 */
 	@Override
 	public void execute() {
-		System.out.println("描画処理開始");
+		System.out.println("実行されるDrawCommand:" + Integer.toHexString(this.hashCode()));
 		drawable.draw(position.x, position.y);
-		System.out.println("描画処理完了");
 	}
-
 }

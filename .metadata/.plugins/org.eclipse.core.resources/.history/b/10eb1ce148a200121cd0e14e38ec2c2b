@@ -1,0 +1,52 @@
+/**
+ * 
+ */
+package command.drawer;
+
+import java.awt.Canvas;
+import java.awt.Color;
+import java.awt.Graphics;
+
+import command.command.MacroCommand;
+
+/**
+ * @author urushibata
+ * java.awt.Canvasを継承
+ * InterFace Drawableの実装クラス
+ */
+public class DrawCanvas extends Canvas implements Drawable {
+	private static final long serialVersionUID = 8912999038848526103L;
+	// 描画色
+	private Color color = Color.red;
+	// 描画する点の半径
+	private int radius = 6;
+	// Mainクラスから渡され、このクラスと共有する。
+	// 履歴
+	private MacroCommand history;
+
+	// コンストラクタ
+	public DrawCanvas(int width, int height, MacroCommand history) {
+		setSize(width, height);
+		setBackground(Color.white);
+		this.history = history;
+	}
+
+	// 履歴全体を再描画
+	public void paint(Graphics g){
+		System.out.println('paintメソッド');
+		history.execute();
+	}
+
+	/*
+	 * (非 Javadoc)
+	 * 
+	 * @see command.drawer.Drawable#draw(int, int)
+	 */
+	@Override
+	public void draw(int x, int y) {
+		Graphics g = getGraphics();
+		g.setColor(this.color);
+		g.fillOval(x - this.radius, y - this.radius, this.radius * 2,
+				this.radius * 2);
+	}
+}

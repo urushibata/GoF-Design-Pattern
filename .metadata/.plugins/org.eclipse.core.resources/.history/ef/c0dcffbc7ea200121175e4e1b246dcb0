@@ -1,0 +1,11 @@
+package command.command;
+
+/**
+ * @author urushibata
+ *
+ */
+public interface Command {
+	public abstract void execute();
+
+	public abstract void changeColor();
+}

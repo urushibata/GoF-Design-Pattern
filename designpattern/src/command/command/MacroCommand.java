@@ -1,11 +1,12 @@
 /**
  *
  */
-package command.cmmand;
+package command.command;
 
 import java.util.ArrayDeque;
-import java.util.Arrays;
+import java.util.LinkedList;
 import java.util.Iterator;
+
 
 /**
  * @author urushibata
@@ -20,6 +21,8 @@ public class MacroCommand implements Command {
 	 */
 	// 命令の集合(スタック:LIFO)
 	private ArrayDeque<Command> commands = new ArrayDeque<Command>();
+	// 命令の集合(キュー:FIFO)
+	// private LinkedList<Command> commands = new LinkedList<Command>();
 
 	// 実行
 	@Override
@@ -37,9 +40,17 @@ public class MacroCommand implements Command {
 	public void append(Command cmd) {
 		// コマンドが自分自身以外の場合
 		if (cmd != this) {
+			// MacroCommandにコマンドを追加
+			// pushは配列の先頭に挿入される。
 			commands.push(cmd);
-			System.out.println("MacroCommandにコマンドを追加");
-			System.out.println("MacroCommandの中身：" + Arrays.deepToString(commands.toArray()));
+
+			System.out.println("追加後commands:[");
+			int i = 0;
+			for(Command c: commands){
+				System.out.println("MacroCommand.commands[" + i + "]:" + c);
+				i++;
+			}
+			System.out.println("]");
 		}
 	}
 
@@ -47,7 +58,7 @@ public class MacroCommand implements Command {
 	public void undo() {
 		System.out.println("Undo前MacroCommandの中身：" + commands);
 		// コマンドが自分自身以外の場合
-		if (!commands.isEmpty()) {
+		if (!commands.isEmpty()){
 			commands.pop();
 			System.out.println("Undo後MacroCommandの中身：" + commands);
 		}
@@ -55,10 +66,9 @@ public class MacroCommand implements Command {
 
 	// 全部削除
 	public void clear() {
-		System.out.println("Clear前MacroCommandの中身：" + commands);
+		// コマンド履歴がある場合
 		if (!commands.isEmpty()) {
 			commands.clear();
-			System.out.println("Clear前MacroCommandの中身：" + commands);
 		}
 	}
 }

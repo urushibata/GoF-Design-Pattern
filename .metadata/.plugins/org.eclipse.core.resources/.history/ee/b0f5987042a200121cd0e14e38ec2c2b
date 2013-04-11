@@ -1,0 +1,72 @@
+/**
+ *
+ */
+package command.command;
+
+import java.util.ArrayDeque;
+import java.util.Arrays;
+import java.util.Iterator;
+
+import command.drawer.DrawCommand;
+
+/**
+ * @author urushibata
+ *
+ */
+public class MacroCommand implements Command {
+
+	/*
+	 * (非 Javadoc)
+	 *
+	 * @see command.cmmand.Command#execute()
+	 */
+	// 命令の集合(スタック:LIFO)
+	private ArrayDeque<Command> commands = new ArrayDeque<Command>();
+
+	// 実行
+	@Override
+	public void execute() {
+		Iterator<Command> it = commands.iterator();
+		while (it.hasNext()) {
+			((Command) it.next()).execute();
+		}
+	}
+
+	/**
+	 * @param cmd DrawComandインスタンスがCommand型で渡される。
+	 * コマンドを履歴に追加する。
+	 */
+	public void append(Command cmd) {
+		// コマンドが自分自身以外の場合
+		if (cmd != this) {
+			// MacroCommandにコマンドを追加
+			commands.push(cmd);
+
+			System.out.println("追加後commands:[");
+			int = 0;
+			for(Command c: commands){
+				System.out.println("MacroCommand.commands[" + i + "]:" + c);
+			}
+			System.out.println("]");
+		}
+	}
+
+	// 最後の命令を削除
+	public void undo() {
+		System.out.println("Undo前MacroCommandの中身：" + commands);
+		// コマンドが自分自身以外の場合
+		if (!commands.isEmpty()) {
+			commands.pop();
+			System.out.println("Undo後MacroCommandの中身：" + commands);
+		}
+	}
+
+	// 全部削除
+	public void clear() {
+		System.out.println("Clear前MacroCommandの中身：" + commands);
+		if (!commands.isEmpty()) {
+			commands.clear();
+			System.out.println("Clear前MacroCommandの中身：" + commands);
+		}
+	}
+}

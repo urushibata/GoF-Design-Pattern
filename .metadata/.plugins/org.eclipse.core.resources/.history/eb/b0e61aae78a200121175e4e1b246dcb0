@@ -1,0 +1,41 @@
+package command.drawer;
+
+import java.awt.Point;
+import command.command.Command;
+
+/**
+ * @author urush_000
+ *
+ */
+public class ColorCommand implements Command {
+
+	// 描画対象
+	protected Drawable drawable;
+	// 指定色
+	private int r;
+	private int g;
+	private int b;
+
+	/**
+	 * @param drawable DrawCanvasクラス
+	 * @param position 座標
+	 * コンストラクタ
+	 */
+	public ColorCommand(Drawable drawable, int... colors) {
+		this.r = colors[0];
+		this.g = colors[0];
+		this.b = colors[0];
+
+		System.out.println("追加メンバ変数:R:" + r + " G:" + g + " B:" + b);
+		System.out.println("追加メンバ:" + this);
+	}
+
+	/**
+	 * メンバ変数のdrawable<DrawCanvas>のdrawメソッド実行
+	 */
+	@Override
+	public void execute() {
+		System.out.println("実行されるDrawCommand:" + Integer.toHexString(this.hashCode()));
+		drawable.draw(position.x, position.y);
+	}
+}
