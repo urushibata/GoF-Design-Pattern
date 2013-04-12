@@ -4,6 +4,7 @@ package command.command;
 import java.util.LinkedList;
 import java.util.Iterator;
 
+
 /**
  * @author urushibata
  * 命令の集合クラス
@@ -38,7 +39,7 @@ public class MacroCommand implements Command{
 			// MacroCommandにコマンドを追加
 			// pushはリストの先頭に挿入される(Stackの場合)。
 			//commands.push(cmd);
-			// offerはリストの最後尾に挿入される(Queueの場合)。
+			// offerはリストの最後尾に挿入される(Queue。
 			commands.offer(cmd);
 
 			System.out.println("追加後commands:[");

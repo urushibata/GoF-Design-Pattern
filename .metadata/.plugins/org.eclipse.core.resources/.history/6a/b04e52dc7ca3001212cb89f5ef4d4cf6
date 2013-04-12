@@ -2,10 +2,6 @@ package command.drawer;
 
 import java.awt.Color;
 
-/**
- * @author urushbata
- * イベントロジックインターフェース
- */
 public interface Drawable {
 	public abstract void init();
 	public abstract void draw(int x, int y);

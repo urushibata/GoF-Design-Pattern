@@ -1,3 +1,6 @@
+/**
+ *
+ */
 package command;
 
 import java.awt.Color;
@@ -126,7 +129,7 @@ public class Main extends JFrame implements ActionListener{
 		// getContentPaneでルートコンポーネントを作成する。
 		getContentPane().add(rootTab);
 		// 閉じたときの処理
-		// 以下はデフォルト値なので書かなくても動く。
+		// 以下はデフォルト値なので書かなくても動く。 
 		// パラメータ
 		//	DISPOSE_ON_CLOSE	ウィンドウを消去し、リソースを破棄する。
 		//	DO_NOTHING_ON_CLOSE	何もしない。WindowListenerのwindowClosingでリソースを破棄する必要がある。

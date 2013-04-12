@@ -4,11 +4,12 @@ package command.command;
 import java.util.LinkedList;
 import java.util.Iterator;
 
+
 /**
  * @author urushibata
  * 命令の集合クラス
  */
-public class MacroCommand implements Command{
+public class MacroCommand implements Command {
 
 	/*
 	 * @see command.cmmand.Command#execute()
@@ -21,9 +22,9 @@ public class MacroCommand implements Command{
 
 	// 実行
 	@Override
-	public void execute(){
+	public void execute() {
 		Iterator<Command> it = commands.iterator();
-		while (it.hasNext()){
+		while (it.hasNext()) {
 			((Command) it.next()).execute();
 		}
 	}
@@ -32,13 +33,13 @@ public class MacroCommand implements Command{
 	 * @param cmd DrawComandインスタンスがCommand型で渡される。
 	 * コマンドを履歴に追加する。
 	 */
-	public void append(Command cmd){
+	public void append(Command cmd) {
 		// コマンドが自分自身以外の場合
 		if (cmd != this) {
 			// MacroCommandにコマンドを追加
 			// pushはリストの先頭に挿入される(Stackの場合)。
 			//commands.push(cmd);
-			// offerはリストの最後尾に挿入される(Queueの場合)。
+			// offerはリストの最後尾に挿入される。
 			commands.offer(cmd);
 
 			System.out.println("追加後commands:[");

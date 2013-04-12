@@ -4,9 +4,8 @@ import java.awt.Point;
 import command.command.Command;
 
 /**
- * @author urushibata
- * 書くという命令クラス
- * Interface Commandの実装クラス
+ * @author urush_000
+ *
  */
 public class DrawCommand implements Command {
 

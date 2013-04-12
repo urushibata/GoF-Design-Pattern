@@ -5,8 +5,7 @@ import command.command.Command;
 
 /**
  * @author urushibata
- * 書くという命令クラス
- * Interface Commandの実装クラス
+ *
  */
 public class DrawCommand implements Command {
 

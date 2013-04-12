@@ -2,7 +2,7 @@ package command.command;
 
 /**
  * @author urushibata
- * 命令インターフェース
+ * 命令クラス
  */
 public interface Command {
 	public abstract void execute();

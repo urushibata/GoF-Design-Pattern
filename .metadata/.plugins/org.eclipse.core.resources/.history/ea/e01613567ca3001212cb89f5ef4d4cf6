@@ -5,9 +5,8 @@ import java.awt.Color;
 import command.command.Command;
 
 /**
- * @author urushbata
- * 線の色を変更するという命令クラス
- * Interface Commandの実装クラス
+ * @author urush_000
+ *
  */
 public class ColorCommand implements Command {
 
@@ -18,7 +17,7 @@ public class ColorCommand implements Command {
 
 	/**
 	 * @param drawable DrawCanvasクラス
-	 * @param color 色
+	 * @param position 座標
 	 * コンストラクタ
 	 */
 	public ColorCommand(Drawable drawable, Color color) {

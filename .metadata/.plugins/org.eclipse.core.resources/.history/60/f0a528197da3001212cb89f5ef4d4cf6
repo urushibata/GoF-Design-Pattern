@@ -7,7 +7,6 @@ import command.command.Command;
 /**
  * @author urushbata
  * 線の色を変更するという命令クラス
- * Interface Commandの実装クラス
  */
 public class ColorCommand implements Command {
 

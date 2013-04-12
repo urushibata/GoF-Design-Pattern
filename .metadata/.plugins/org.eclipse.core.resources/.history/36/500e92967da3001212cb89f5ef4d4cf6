@@ -4,8 +4,7 @@ import command.command.Command;
 
 /**
  * @author urushibata
- * 印刷するという命令クラス
- * Interface Commandの実装クラス
+ *
  */
 public class PrintCommand implements Command {
 

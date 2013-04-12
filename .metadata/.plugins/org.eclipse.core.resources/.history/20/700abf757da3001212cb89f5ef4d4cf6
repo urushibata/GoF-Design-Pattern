@@ -3,9 +3,8 @@ package command.drawer;
 import command.command.Command;
 
 /**
- * @author urushibata
- * 印刷するという命令クラス
- * Interface Commandの実装クラス
+ * @author urush_000
+ *
  */
 public class PrintCommand implements Command {
 
