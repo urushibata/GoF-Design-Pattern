@@ -3,9 +3,18 @@
  */
 package command.drawer;
 
+import java.io.File;
+import java.io.IOException;
+
 import java.awt.Canvas;
 import java.awt.Color;
 import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.image.BufferedImage;
+
+import javax.imageio.ImageIO;
+import javax.swing.JFileChooser;
+import javax.swing.filechooser.FileNameExtensionFilter;
 
 import command.command.MacroCommand;
 
@@ -45,7 +54,6 @@ public class DrawCanvas extends Canvas implements Drawable {
 	 */
 	@Override
 	public void draw(int x, int y){
-		System.out.println("さて、書くか。");
 		System.out.println("今の色：" + this.color);
 
 		// ComponentクラスのgetGraphicsでGraphicsクラス作成
@@ -57,7 +65,6 @@ public class DrawCanvas extends Canvas implements Drawable {
 		// 第三引数	width
 		// 第四引数	height
 		g.fillOval(x - this.radius, y - this.radius, this.radius * 2, this.radius * 2);
-		System.out.println("はいよ");
 	}
 
 	@Override
@@ -71,5 +78,36 @@ public class DrawCanvas extends Canvas implements Drawable {
 	public void setColor(Color color){
 		System.out.println("色セット！！→" + color);
 		this.color = color;
+	}
+
+	@Override
+	public void printOut(){
+		JFileChooser fc = new JFileChooser();
+		fc.setFileFilter(new FileNameExtensionFilter("画像ファイル(*.png)", "png"));
+		// 複数選択不可
+		fc.setMultiSelectionEnabled(false);
+		// ファイル選択ダイアログ表示
+		int result = fc.showSaveDialog(this);
+
+		if(result == JFileChooser.APPROVE_OPTION){
+			File f = fc.getSelectedFile();
+			// TODO 保存できない！！
+			System.out.println("保存先選択完了：" + f.toString());
+			try{
+				int w = this.getWidth();
+				int h = this.getHeight();
+				int type = BufferedImage.TYPE_INT_RGB;
+				System.out.println("w : " + w + " h : " + h + " type : " + type);
+				BufferedImage buffer = new BufferedImage(w, h, type);
+				Graphics2D g2 = buffer.createGraphics();
+				print(g2);
+				g2.dispose();
+				ImageIO.write(buffer, "png", f);
+			}catch(IOException e) {
+				e.printStackTrace();
+			}
+		}else if(result == JFileChooser.ERROR_OPTION){
+			System.out.println("エラーが発生しました。");
+		}
 	}
 }

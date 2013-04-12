@@ -38,41 +38,21 @@
 <part id="0"/>
 <part id="1"/>
 <part id="2"/>
-<part id="3"/>
-<part id="4"/>
-<part id="5"/>
-<part id="6"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MacroCommand.java" partName="MacroCommand.java" path="D:/usr/work/java-project/project-002/designpattern/src/command/command/MacroCommand.java" title="MacroCommand.java" tooltip="designpattern/src/command/command/MacroCommand.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/designpattern/src/command/command/MacroCommand.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="804" selectionTopPixel="360"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DrawCommand.java" partName="DrawCommand.java" path="D:/usr/work/java-project/project-002/designpattern/src/command/drawer/DrawCommand.java" title="DrawCommand.java" tooltip="designpattern/src/command/drawer/DrawCommand.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/designpattern/src/command/drawer/DrawCommand.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="709" selectionTopPixel="178"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
 </editor>
 <editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DrawCanvas.java" partName="DrawCanvas.java" path="D:/usr/work/java-project/project-002/designpattern/src/command/drawer/DrawCanvas.java" title="DrawCanvas.java" tooltip="designpattern/src/command/drawer/DrawCanvas.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/designpattern/src/command/drawer/DrawCanvas.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="120" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ColorCommand.java" partName="ColorCommand.java" path="D:/usr/work/java-project/project-002/designpattern/src/command/drawer/ColorCommand.java" title="ColorCommand.java" tooltip="designpattern/src/command/drawer/ColorCommand.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/designpattern/src/command/drawer/ColorCommand.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="753" selectionTopPixel="221"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Command.java" partName="Command.java" path="D:/usr/work/java-project/project-002/designpattern/src/command/command/Command.java" title="Command.java" tooltip="designpattern/src/command/command/Command.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/designpattern/src/command/command/Command.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="127" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Drawable.java" partName="Drawable.java" path="D:/usr/work/java-project/project-002/designpattern/src/command/drawer/Drawable.java" title="Drawable.java" tooltip="designpattern/src/command/drawer/Drawable.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/designpattern/src/command/drawer/Drawable.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="191" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2176" selectionTopPixel="1376"/>
 </editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Main.java" partName="Main.java" path="D:/usr/work/java-project/project-002/designpattern/src/command/Main.java" title="Main.java" tooltip="designpattern/src/command/Main.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/designpattern/src/command/Main.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="28" selectionOffset="218" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="211" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
@@ -82,7 +62,6 @@
 <view id="org.eclipse.ui.views.ProblemView" partName="問題">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="問題">
 <expanded>
-<category IMemento.internal.id="Warnings (1 項目)"/>
 <category IMemento.internal.id="Warnings"/>
 <category IMemento.internal.id="Errors"/>
 </expanded>
@@ -292,161 +271,161 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/designpattern/src/command/command/MacroCommand.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/designpattern/src/command/Main.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/designpattern/src/command/drawer/DrawCanvas.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/designpattern/src/command/drawer/ColorCommand.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/designpattern/src/command/command/Command.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/designpattern/src/command/drawer/Drawable.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/designpattern/src/command/Main.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/designpattern/src/command/drawer/PrintCommand.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/designpattern/src/command/command/MacroCommand.java"/>
 </editors>
-<item historyLabel="ColorCommand.java" index="3">
-<position info="not_deleted" x="615" y="0"/>
+<item historyLabel="PrintCommand.java" index="4">
+<position info="not_deleted" x="373" y="0"/>
 </item>
-<item historyLabel="Main.java" index="1">
-<position info="not_deleted" x="4616" y="0"/>
+<item historyLabel="Main.java" index="3">
+<position info="not_deleted" x="6016" y="24"/>
 </item>
-<item historyLabel="ColorCommand.java" index="3">
-<position info="not_deleted" x="674" y="0"/>
+<item historyLabel="Main.java" index="3">
+<position/>
 </item>
-<item historyLabel="ColorCommand.java" index="3">
-<position info="not_deleted" x="137" y="12"/>
+<item historyLabel="Main.java" index="3">
+<position info="not_deleted" x="6016" y="24"/>
 </item>
-<item historyLabel="Command.java" index="4">
-<position info="not_deleted" x="127" y="0"/>
+<item historyLabel="Command.java" index="1">
+<position/>
 </item>
-<item historyLabel="Main.java" index="1">
-<position info="not_deleted" x="4905" y="0"/>
+<item historyLabel="Main.java" index="3">
+<position info="not_deleted" x="6102" y="0"/>
 </item>
-<item historyLabel="ColorCommand.java" index="3">
-<position info="not_deleted" x="137" y="12"/>
+<item historyLabel="Drawable.java" index="2">
+<position/>
 </item>
-<item historyLabel="Main.java" index="1">
-<position info="not_deleted" x="5027" y="0"/>
+<item historyLabel="Command.java" index="1">
+<position/>
 </item>
-<item historyLabel="ColorCommand.java" index="3">
-<position info="not_deleted" x="137" y="0"/>
+<item historyLabel="Main.java" index="3">
+<position info="not_deleted" x="6102" y="0"/>
 </item>
-<item historyLabel="ColorCommand.java" index="3">
+<item historyLabel="PrintCommand.java" index="4">
+<position info="not_deleted" x="373" y="0"/>
+</item>
+<item historyLabel="Command.java" index="1">
+<position/>
+</item>
+<item historyLabel="PrintCommand.java" index="4">
+<position info="not_deleted" x="373" y="0"/>
+</item>
+<item historyLabel="Drawable.java" index="2">
+<position/>
+</item>
+<item historyLabel="Main.java" index="3">
+<position info="not_deleted" x="6026" y="0"/>
+</item>
+<item historyLabel="PrintCommand.java" index="4">
+<position info="not_deleted" x="289" y="0"/>
+</item>
+<item historyLabel="PrintCommand.java" index="4">
+<position info="not_deleted" x="289" y="0"/>
+</item>
+<item historyLabel="PrintCommand.java" index="4">
+<position info="not_deleted" x="319" y="0"/>
+</item>
+<item historyLabel="Main.java" index="3">
+<position info="not_deleted" x="6026" y="0"/>
+</item>
+<item historyLabel="PrintCommand.java" index="4">
+<position info="not_deleted" x="289" y="0"/>
+</item>
+<item historyLabel="Main.java" index="3">
+<position info="not_deleted" x="6026" y="0"/>
+</item>
+<item historyLabel="Main.java" index="3">
+<position/>
+</item>
+<item historyLabel="Main.java" index="3">
+<position info="not_deleted" x="6159" y="0"/>
+</item>
+<item historyLabel="DrawCanvas.java" index="0">
+<position/>
+</item>
+<item historyLabel="Main.java" index="3">
+<position/>
+</item>
+<item historyLabel="DrawCanvas.java" index="0">
+<position info="not_deleted" x="2535" y="0"/>
+</item>
+<item historyLabel="Main.java" index="3">
+<position/>
+</item>
+<item historyLabel="DrawCanvas.java" index="0">
+<position info="not_deleted" x="2579" y="0"/>
+</item>
+<item historyLabel="PrintCommand.java" index="4">
+<position info="not_deleted" x="289" y="0"/>
+</item>
+<item historyLabel="Main.java" index="3">
+<position/>
+</item>
+<item historyLabel="Main.java" index="3">
+<position info="not_deleted" x="6312" y="0"/>
+</item>
+<item historyLabel="DrawCanvas.java" index="0">
+<position info="not_deleted" x="2579" y="0"/>
+</item>
+<item historyLabel="Main.java" index="3">
+<position/>
+</item>
+<item historyLabel="MacroCommand.java" index="5">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="DrawCanvas.java" index="0">
+<position info="not_deleted" x="2579" y="0"/>
+</item>
+<item historyLabel="Main.java" index="3">
+<position info="not_deleted" x="5999" y="0"/>
+</item>
+<item historyLabel="DrawCanvas.java" index="0">
+<position info="not_deleted" x="2579" y="0"/>
+</item>
+<item historyLabel="PrintCommand.java" index="4">
+<position info="not_deleted" x="289" y="0"/>
+</item>
+<item historyLabel="Main.java" index="3">
+<position info="not_deleted" x="5909" y="0"/>
+</item>
+<item historyLabel="MacroCommand.java" index="5">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="DrawCanvas.java" index="0">
+<position info="not_deleted" x="2625" y="0"/>
+</item>
+<item historyLabel="Main.java" index="3">
+<position info="not_deleted" x="6039" y="0"/>
+</item>
+<item historyLabel="PrintCommand.java" index="4">
+<position info="not_deleted" x="464" y="0"/>
+</item>
+<item historyLabel="Command.java" index="1">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="PrintCommand.java" index="4">
+<position info="not_deleted" x="464" y="0"/>
+</item>
+<item historyLabel="Drawable.java" index="2">
+<position info="not_deleted" x="51" y="0"/>
+</item>
+<item historyLabel="PrintCommand.java" index="4">
 <position info="not_deleted" x="27" y="0"/>
 </item>
-<item historyLabel="MacroCommand.java" index="0">
-<position info="not_deleted" x="804" y="0"/>
+<item historyLabel="Main.java" index="3">
+<position info="not_deleted" x="6039" y="0"/>
 </item>
-<item historyLabel="ColorCommand.java" index="3">
-<position info="not_deleted" x="53" y="0"/>
+<item historyLabel="DrawCanvas.java" index="0">
+<position info="not_deleted" x="2494" y="0"/>
 </item>
-<item historyLabel="DrawCanvas.java" index="2">
-<position info="not_deleted" x="2" y="0"/>
+<item historyLabel="Main.java" index="3">
+<position info="not_deleted" x="211" y="0"/>
 </item>
-<item historyLabel="Drawable.java" index="5">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="Main.java" index="1">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="Main.java" index="1">
-<position info="not_deleted" x="1629" y="0"/>
-</item>
-<item historyLabel="Main.java" index="1">
-<position info="not_deleted" x="2449" y="0"/>
-</item>
-<item historyLabel="ColorCommand.java" index="3">
-<position info="not_deleted" x="53" y="0"/>
-</item>
-<item historyLabel="ColorCommand.java" index="3">
-<position/>
-</item>
-<item historyLabel="ColorCommand.java" index="3">
-<position/>
-</item>
-<item historyLabel="ColorCommand.java" index="3">
-<position info="not_deleted" x="22" y="0"/>
-</item>
-<item historyLabel="Drawable.java" index="5">
-<position info="not_deleted" x="79" y="0"/>
-</item>
-<item historyLabel="Main.java" index="1">
-<position info="not_deleted" x="2473" y="0"/>
-</item>
-<item historyLabel="Main.java" index="1">
-<position info="not_deleted" x="4134" y="0"/>
-</item>
-<item historyLabel="DrawCanvas.java" index="2">
-<position info="not_deleted" x="954" y="0"/>
-</item>
-<item historyLabel="Main.java" index="1">
-<position info="not_deleted" x="5094" y="0"/>
-</item>
-<item historyLabel="ColorCommand.java" index="3">
-<position info="not_deleted" x="362" y="0"/>
-</item>
-<item historyLabel="Main.java" index="1">
-<position info="not_deleted" x="4746" y="0"/>
-</item>
-<item historyLabel="Drawable.java" index="5">
-<position info="not_deleted" x="79" y="0"/>
-</item>
-<item historyLabel="Drawable.java" index="5">
-<position info="not_deleted" x="109" y="0"/>
-</item>
-<item historyLabel="Drawable.java" index="5">
-<position info="not_deleted" x="198" y="0"/>
-</item>
-<item historyLabel="Drawable.java" index="5">
-<position info="not_deleted" x="198" y="0"/>
-</item>
-<item historyLabel="ColorCommand.java" index="3">
-<position info="not_deleted" x="590" y="0"/>
-</item>
-<item historyLabel="DrawCanvas.java" index="2">
-<position info="not_deleted" x="277" y="10"/>
-</item>
-<item historyLabel="DrawCanvas.java" index="2">
-<position info="not_deleted" x="707" y="0"/>
-</item>
-<item historyLabel="DrawCanvas.java" index="2">
-<position info="not_deleted" x="1560" y="0"/>
-</item>
-<item historyLabel="DrawCanvas.java" index="2">
-<position info="not_deleted" x="1560" y="0"/>
-</item>
-<item historyLabel="DrawCanvas.java" index="2">
-<position info="not_deleted" x="2" y="0"/>
-</item>
-<item historyLabel="ColorCommand.java" index="3">
-<position info="not_deleted" x="647" y="0"/>
-</item>
-<item historyLabel="Command.java" index="4">
-<position info="not_deleted" x="127" y="0"/>
-</item>
-<item historyLabel="Drawable.java" index="5">
-<position info="not_deleted" x="191" y="0"/>
-</item>
-<item historyLabel="Main.java" index="1">
-<position info="not_deleted" x="4556" y="0"/>
-</item>
-<item historyLabel="DrawCanvas.java" index="2">
-<position info="not_deleted" x="1536" y="0"/>
-</item>
-<item historyLabel="ColorCommand.java" index="3">
-<position info="not_deleted" x="647" y="0"/>
-</item>
-<item historyLabel="DrawCanvas.java" index="2">
-<position info="not_deleted" x="1536" y="0"/>
-</item>
-<item historyLabel="ColorCommand.java" index="3">
-<position info="not_deleted" x="753" y="0"/>
-</item>
-<item historyLabel="Main.java" index="1">
-<position info="not_deleted" x="4523" y="35"/>
-</item>
-<item historyLabel="Main.java" index="1">
-<position info="not_deleted" x="5034" y="0"/>
-</item>
-<item historyLabel="Main.java" index="1">
-<position info="not_deleted" x="218" y="28"/>
-</item>
-<item active="true" historyLabel="DrawCanvas.java" index="2">
+<item active="true" historyLabel="DrawCanvas.java" index="0">
 <position/>
 </item>
 </navigationHistory>
@@ -456,7 +435,6 @@
 <actionBarAdvisor/>
 <trimLayout>
 <trimArea IMemento.internal.id="131072">
-<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@1838572"/>
 <trimItem IMemento.internal.id="right"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@1df7e2b"/>
 </trimArea>
@@ -472,23 +450,26 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Main.java" tooltip="designpattern/src/command/Main.java">
-<persistable path="/designpattern/src/command/Main.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Command.java" tooltip="designpattern/src/command/command/Command.java">
+<persistable path="/designpattern/src/command/command/Command.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Drawable.java" tooltip="designpattern/src/command/drawer/Drawable.java">
 <persistable path="/designpattern/src/command/drawer/Drawable.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Command.java" tooltip="designpattern/src/command/command/Command.java">
-<persistable path="/designpattern/src/command/command/Command.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DrawCommand.java" tooltip="designpattern/src/command/drawer/DrawCommand.java">
+<persistable path="/designpattern/src/command/drawer/DrawCommand.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PrintCommand.java" tooltip="designpattern/src/command/drawer/PrintCommand.java">
+<persistable path="/designpattern/src/command/drawer/PrintCommand.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Main.java" tooltip="designpattern/src/command/Main.java">
+<persistable path="/designpattern/src/command/Main.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ColorCommand.java" tooltip="designpattern/src/command/drawer/ColorCommand.java">
 <persistable path="/designpattern/src/command/drawer/ColorCommand.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DrawCanvas.java" tooltip="designpattern/src/command/drawer/DrawCanvas.java">
 <persistable path="/designpattern/src/command/drawer/DrawCanvas.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DrawCommand.java" tooltip="designpattern/src/command/drawer/DrawCommand.java">
-<persistable path="/designpattern/src/command/drawer/DrawCommand.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MacroCommand.java" tooltip="designpattern/src/command/command/MacroCommand.java">
 <persistable path="/designpattern/src/command/command/MacroCommand.java"/>

@@ -1,0 +1,100 @@
+/**
+ *
+ */
+package command.drawer;
+
+import java.io.File;
+
+import java.awt.Canvas;
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.image.RenderedImage;
+
+import javax.imageio.ImageIO;
+import javax.swing.JFileChooser;
+import javax.swing.JFrame;
+import javax.swing.filechooser.FileNameExtensionFilter;
+import javax.swing.plaf.metal.MetalIconFactory.FolderIcon16;
+
+import command.command.MacroCommand;
+
+/**
+ * @author urushibata
+ * java.awt.Component→java.awt.Canvasを継承
+ * InterFace Drawableの実装クラス
+ */
+public class DrawCanvas extends Canvas implements Drawable {
+	private static final long serialVersionUID = 8912999038848526103L;
+	private static final RenderedImage RenderdImage = null;
+	// 描画色
+	private Color color;
+	// 描画する点の半径
+	private int radius;
+	// Mainクラスから渡され、このクラスと共有する。
+	// 履歴
+	private MacroCommand history;
+
+	// コンストラクタ
+	public DrawCanvas(int width, int height, MacroCommand history) {
+		setSize(width, height);
+		setBackground(Color.white);
+		this.history = history;
+		init();
+	}
+
+	// 履歴を描画
+	// Canvas→Componentのpaintコールバックメソッド
+	@Override
+	public void paint(Graphics g){
+		System.out.println("paintメソッド");
+		history.execute();
+	}
+
+	/*
+	 * @see command.drawer.Drawable#draw(int, int)
+	 */
+	@Override
+	public void draw(int x, int y){
+		System.out.println("さて、書くか。");
+		System.out.println("今の色：" + this.color);
+
+		// ComponentクラスのgetGraphicsでGraphicsクラス作成
+		Graphics g = getGraphics();
+		g.setColor(this.color);
+		// 塗り潰された円を書く。
+		// 第一引数	左上のX座標
+		// 第二引数	左上のY座標
+		// 第三引数	width
+		// 第四引数	height
+		g.fillOval(x - this.radius, y - this.radius, this.radius * 2, this.radius * 2);
+		System.out.println("はいよ");
+	}
+
+	@Override
+	public void init() {
+		this.color = Color.red;
+		this.radius = 3;
+		history.append(new ColorCommand(this, color));
+	}
+
+	@Override
+	public void setColor(Color color){
+		System.out.println("色セット！！→" + color);
+		this.color = color;
+	}
+
+	@Override
+	public void printOut() {
+		JFileChooser fc = new JFileChooser();
+		fc.setFileFilter(new FileNameExtensionFilter("画像ファイル", "png", "PNG"));
+		fc.setMultiSelectionEnabled(false);
+		int result = fc.showSaveDialog(this);
+		if(result == JFileChooser.APPROVE_OPTION){
+			File f = fc.getSelectedFile();
+			System.out.println("保存先選択完了：" + f.toString());
+			ImageIO.write((RenderdImage), "png", f);
+		}else if(result == JFileChooser.ERROR_OPTION){
+			System.out.println("エラーが発生しました。");
+		}
+	}
+}
