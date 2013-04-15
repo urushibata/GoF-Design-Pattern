@@ -1,0 +1,24 @@
+package factoryMethod.idcard;
+
+import factoryMethod.framework.Factory;
+import factoryMethod.framework.Product;
+
+/**
+ * @author urushibata
+ *
+ */
+public class IDCardFactory extends Factory{
+
+	@Override
+	protected Product createProduct(String owner) {
+		// TODO 自動生成されたメソッド・スタブ
+		return null;
+	}
+
+	@Override
+	protected void registerProduct(Product p) {
+		// TODO 自動生成されたメソッド・スタブ
+		
+	}
+
+}

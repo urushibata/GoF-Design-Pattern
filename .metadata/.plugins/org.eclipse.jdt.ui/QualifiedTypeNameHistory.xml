@@ -39,4 +39,10 @@
 <fullyQualifiedTypeName name="java.io.IOException"/>
 <fullyQualifiedTypeName name="java.awt.image.BufferedImage"/>
 <fullyQualifiedTypeName name="java.awt.Graphics2D"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="factoryMethod.idcard.IDCard"/>
+<fullyQualifiedTypeName name="factoryMethod.framework.Factory"/>
+<fullyQualifiedTypeName name="factoryMethod.idcard.IDCardFactory"/>
+<fullyQualifiedTypeName name="factoryMethod.framework.Product"/>
 </qualifiedTypeNameHistroy>

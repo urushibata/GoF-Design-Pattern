@@ -1,0 +1,20 @@
+package factoryMethod.framework;
+
+public abstract class Factory {
+	public final Product create(String owner){
+		Product p = createProduct(owner);
+		registerProduct(p);
+		return p;
+	}
+
+	private Product createProduct(String owner) {
+		// TODO 自動生成されたメソッド・スタブ
+		return null;
+	}
+
+	private void registerProduct(Product p) {
+		// TODO 自動生成されたメソッド・スタブ
+		
+	}
+
+}

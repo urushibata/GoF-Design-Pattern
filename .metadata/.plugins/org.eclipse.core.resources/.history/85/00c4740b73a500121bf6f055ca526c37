@@ -1,0 +1,11 @@
+package factoryMethod.idcard;
+
+import factoryMethod.framework.Factory;
+
+/**
+ * @author urushibata
+ *
+ */
+public class IDCardFactory extends Factory{
+
+}

@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package factoryMethod.idcard;
+
+/**
+ * @author urushibata
+ *
+ */
+public class IDCardFactory {
+
+}

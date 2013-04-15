@@ -1,0 +1,16 @@
+package factoryMethod;
+
+import factoryMethod.framework.Factory;
+import factoryMethod.idcard.IDCardFactory;
+
+public class Main {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		Factory factory = new IDCardFactory();
+
+	}
+
+}

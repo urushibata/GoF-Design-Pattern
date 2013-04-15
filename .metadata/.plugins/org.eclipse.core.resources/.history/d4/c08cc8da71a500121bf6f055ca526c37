@@ -1,0 +1,13 @@
+package factoryMethod.framework;
+
+public abstract class Factory {
+	public final Product create(String owner){
+		Product p = createProduct(owner);
+		registerProduct(p);
+		return p;
+	}
+
+	private abstract Product createProduct(String owner);
+
+	private abstract void registerProduct(Product p);
+}

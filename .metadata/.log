@@ -3201,3 +3201,13 @@ Caused by: java.lang.ClassNotFoundException: com.google.inject.internal.util.$Im
 	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
 	at java.lang.ClassLoader.loadClass(ClassLoader.java:356)
 	... 67 more
+!SESSION 2013-04-15 10:15:09.703 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.7.0_10
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=ja_JP
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.epp.usagedata.recording 1 0 2013-04-15 11:04:09.968
+!MESSAGE Usage data uploaded to http://udc.eclipse.org/upload.php in 19281 milliseconds.
