@@ -22,9 +22,10 @@ import command.drawer.PrintCommand;
 import command.drawer.DrawCanvas;
 
 /**
- * @author urushibata
- * commandパターンメインクラス
+ * commandパターンメインクラス<br />
  * お絵かきソフト
+ * @author urushibata
+ * @version 1.0
  */
 public class Main extends JFrame implements ActionListener{
 
@@ -60,12 +61,13 @@ public class Main extends JFrame implements ActionListener{
 		//this.addWindowListener(new WindowAdapter(){});
 		// canvasにMouseMotionListenerを持たせる。
 		canvas.addMouseMotionListener(new MouseMotionAdapter() {
-			/*
-			 * @see
-			 * java.awt.event.ActionListener#mouseDragged(java.awt.event.ActionEvent
-			 * addMouseMotionListenerされたコンポーネントを監視しドラッグイベントが発生したら処理をするインナークラス
+			/**
+			 * addMouseMotionListenerされたコンポーネントを監視しドラッグイベントが発生したら処理をするインナークラス<br />
 			 * インターフェースを実装する場合は、必要ないメソッドも空で実装しなければいけないが、MouseMotionAdapterクラス
 			 * はMouseMotionListenerのメソッドが空で実装されたクラスの為、必要なメソッドのみ実装すればよくなる。
+			 * @since 1.0
+			 * @see
+			 * java.awt.event.ActionListener#mouseDragged(java.awt.event.ActionEvent
 			 */
 			@Override
 			public void mouseDragged(MouseEvent e) {
@@ -143,10 +145,11 @@ public class Main extends JFrame implements ActionListener{
 		System.out.println("ウィンドウ表示");
 	}
 
-	/*
+	/**
+	 * addActionListenerされたコンポーネントを監視しイベントが発生したら処理をする。
+	 * @since 1.0
 	 * @see
 	 * java.awt.event.ActionListener#actionPerformed(java.awt.event.ActionEvent)
-	 * addActionListenerされたコンポーネントを監視しイベントが発生したら処理をする。
 	 */
 	@Override
 	public void actionPerformed(ActionEvent e){
@@ -204,8 +207,10 @@ public class Main extends JFrame implements ActionListener{
 		}
 	}
 
-	/*
+	/**
 	 * メインクラス
+	 * @since 1.0
+	 * @param args
 	 */
 	public static void main(String[] args) {
 		System.out.println("command pattern Strat");
