@@ -1,0 +1,10 @@
+package factoryMethod.framework;
+
+/**
+ * @author urushibata
+ * Procuct抽象クラス
+ * そのことで関心事である"製品を作ること"のみに集中できる。
+ */
+public abstract class Product{
+	public abstract void use();
+}

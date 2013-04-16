@@ -1,0 +1,9 @@
+package factoryMethod.framework;
+
+/**
+ * @author urushibata
+ *
+ */
+public abstract class Product{
+	public abstract void use();
+}

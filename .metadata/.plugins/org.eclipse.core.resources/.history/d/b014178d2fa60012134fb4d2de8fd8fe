@@ -1,0 +1,36 @@
+package factoryMethod.idcard;
+
+import factoryMethod.framework.Product;
+
+/**
+ * Product抽象クラスを継承したIDカード具象クラス
+ * @author urushibata
+ * @version 1.0
+ * @see 1.0
+ */
+public class IDCard extends Product{
+	private String owner;
+
+	/**
+	 * @param owner
+	 */
+	public IDCard(String owner){
+		System.out.println(owner + "のカードを作ります。");
+		this.owner = owner;
+	}
+
+	/**
+	 * {@inheritDoc} 
+	 */
+	@Override
+	public void use() {
+		System.out.println(owner + "のカードを使います。");
+	}
+
+	/**
+	 * @return String
+	 */
+	public String getOwner(){
+		return this.owner;
+	}
+}

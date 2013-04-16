@@ -1,0 +1,18 @@
+package factoryMethod.framework;
+
+/**
+ * @author urushibata
+ * Factory抽象クラス
+ * 抽象クラスでは処理ロジックだけを書く。
+ * そのことで関心事である"製品を作ることのみに集中できる。
+ */
+public abstract class Factory {
+	public final Product create(String owner){
+		Product p = createProduct(owner);
+		registerProduct(p);
+		return p;
+	}
+
+	protected abstract Product createProduct(String owner);
+	protected abstract void registerProduct(Product product);
+}
