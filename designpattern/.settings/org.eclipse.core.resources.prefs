@@ -1,4 +1,4 @@
 eclipse.preferences.version=1
-encoding//src/facade/Main.java=UTF-8
-encoding//src/facade/maildata.txt=UTF-8
-encoding//src/facade/pagemaker=UTF-8
+encoding//src/factoryMethod=UTF-8
+encoding//src/factoryMethod/framework/Factory.java=UTF-8
+encoding//src/factoryMethod/idcard/IDCard.java=UTF-8

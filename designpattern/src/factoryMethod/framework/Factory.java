@@ -1,8 +1,8 @@
 package factoryMethod.framework;
 
 /**
- * Factory’ŠÛƒNƒ‰ƒX<br />
- * ’ŠÛƒNƒ‰ƒX‚Å‚Íˆ—ƒƒWƒbƒN‚¾‚¯‚ð‘‚­B‚»‚Ì‚±‚Æ‚Å"»•i‚ðì‚é‚±‚Æ"‚Æ‚¢‚¤ŠÖSŽ–‚ð’è‹`‚·‚éB
+ * FactoryæŠ½è±¡ã‚¯ãƒ©ã‚¹<br />
+ * æŠ½è±¡ã‚¯ãƒ©ã‚¹ã§ã¯å‡¦ç†ãƒ­ã‚¸ãƒƒã‚¯ã ã‘ã‚’æ›¸ãã€‚ãã®ã“ã¨ã§"è£½å“ã‚’ä½œã‚‹ã“ã¨"ã¨ã„ã†é–¢å¿ƒäº‹ã‚’å®šç¾©ã™ã‚‹ã€‚
  * @author urushibata
  * @version 1.0
  */
@@ -19,15 +19,15 @@ public abstract class Factory{
 	}
 
 	/**
-	 * ProductƒCƒ“ƒXƒ^ƒ“ƒX¶¬ƒƒ\ƒbƒh<br />
-	 * ‚½‚¾‚µAƒCƒ“ƒXƒ^ƒ“ƒX‰»‚·‚é‹ï‘Ì“I‚ÈƒNƒ‰ƒX‚Í‹ïÛƒNƒ‰ƒX‚É”C‚¹‚éB
+	 * Productã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ç”Ÿæˆãƒ¡ã‚½ãƒƒãƒ‰<br />
+	 * ãŸã ã—ã€ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹åŒ–ã™ã‚‹å…·ä½“çš„ãªã‚¯ãƒ©ã‚¹ã¯å…·è±¡ã‚¯ãƒ©ã‚¹ã«ä»»ã›ã‚‹ã€‚
 	 * @param owner
 	 * @return Product
 	 */
 	protected abstract Product createProduct(String owner);
 	/**
-	 * ƒCƒ“ƒXƒ^ƒ“ƒX‚Ìƒƒ“ƒo•Ï”‚Éƒf[ƒ^‚ð“o˜^‚·‚éB<br />
-	 * ‚½‚¾‚µA“o˜^‚·‚é‹ï‘Ì“I‚ÈŒ^A’l‚Í‹ïÛƒNƒ‰ƒX‚É”C‚¹‚éB
+	 * ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã®ãƒ¡ãƒ³ãƒå¤‰æ•°ã«ãƒ‡ãƒ¼ã‚¿ã‚’ç™»éŒ²ã™ã‚‹ã€‚<br />
+	 * ãŸã ã—ã€ç™»éŒ²ã™ã‚‹å…·ä½“çš„ãªåž‹ã€å€¤ã¯å…·è±¡ã‚¯ãƒ©ã‚¹ã«ä»»ã›ã‚‹ã€‚
 	 * @param Product
 	 * @since 1.0
 	 */

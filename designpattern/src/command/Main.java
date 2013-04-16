@@ -22,64 +22,64 @@ import command.drawer.PrintCommand;
 import command.drawer.DrawCanvas;
 
 /**
- * commandƒpƒ^[ƒ“ƒƒCƒ“ƒNƒ‰ƒX<br />
- * ‚¨ŠG‚©‚«ƒ\ƒtƒg
+ * commandãƒ‘ã‚¿ãƒ¼ãƒ³ãƒ¡ã‚¤ãƒ³ã‚¯ãƒ©ã‚¹<br />
+ * ãŠçµµã‹ãã‚½ãƒ•ãƒˆ
  * @author urushibata
  * @version 1.0
  */
 public class Main extends JFrame implements ActionListener{
 
 	private static final long serialVersionUID = 6430184986003295769L;
-	// •`‰æ—š—ğ
+	// æç”»å±¥æ­´
 	private MacroCommand history = new MacroCommand();
-	// •`‰æ—Ìˆæ
+	// æç”»é ˜åŸŸ
 	private DrawCanvas canvas = new DrawCanvas(400, 400, history);
-	// JButtonƒCƒ“ƒXƒ^ƒ“ƒXì¬
-	// ƒNƒŠƒAƒ{ƒ^ƒ“
+	// JButtonã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ä½œæˆ
+	// ã‚¯ãƒªã‚¢ãƒœã‚¿ãƒ³
 	private JButton clearButton = new JButton("clear");
-	// ƒAƒ“ƒhƒD
+	// ã‚¢ãƒ³ãƒ‰ã‚¥
 	private JButton undoButton = new JButton("undo");
-	// Ô•¶š
+	// èµ¤æ–‡å­—
 	private JButton redFontButton = new JButton("red");
-	// Â•¶š
+	// é’æ–‡å­—
 	private JButton blueFontButton = new JButton("blue");
-	// —Î•¶š
+	// ç·‘æ–‡å­—
 	private JButton greenFontButton = new JButton("green");
-	// ˆóü
+	// å°åˆ·
 	private JButton printButton = new JButton("print");
 
 	/**
-	 * @param title ƒEƒBƒ“ƒhƒE‚Ìƒ^ƒCƒgƒ‹
+	 * @param title ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ã®ã‚¿ã‚¤ãƒˆãƒ«
 	 */
 	public Main(String title) {
-		// ƒX[ƒpƒNƒ‰ƒX‚ÌƒRƒ“ƒXƒgƒ‰ƒNƒ^
+		// ã‚¹ãƒ¼ãƒ‘ã‚¯ãƒ©ã‚¹ã®ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿
 		super(title);
 
-		// JFrame¨Frame¨WindowƒX[ƒpƒNƒ‰ƒX‚Ìƒƒ\ƒbƒh
-		// ƒEƒBƒ“ƒhƒE‚ÉƒŠƒXƒi[‹@”\‚ğÀ‘•‚·‚éB
-		// TODO –³‚­‚Ä‚à“®‚­BBB
+		// JFrameâ†’Frameâ†’Windowã‚¹ãƒ¼ãƒ‘ã‚¯ãƒ©ã‚¹ã®ãƒ¡ã‚½ãƒƒãƒ‰
+		// ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ã«ãƒªã‚¹ãƒŠãƒ¼æ©Ÿèƒ½ã‚’å®Ÿè£…ã™ã‚‹ã€‚
+		// TODO ç„¡ãã¦ã‚‚å‹•ãã€‚ã€‚ã€‚
 		//this.addWindowListener(new WindowAdapter(){});
-		// canvas‚ÉMouseMotionListener‚ğ‚½‚¹‚éB
+		// canvasã«MouseMotionListenerã‚’æŒãŸã›ã‚‹ã€‚
 		canvas.addMouseMotionListener(new MouseMotionAdapter() {
 			/**
-			 * addMouseMotionListener‚³‚ê‚½ƒRƒ“ƒ|[ƒlƒ“ƒg‚ğŠÄ‹‚µƒhƒ‰ƒbƒOƒCƒxƒ“ƒg‚ª”­¶‚µ‚½‚çˆ—‚ğ‚·‚éƒCƒ“ƒi[ƒNƒ‰ƒX<br />
-			 * ƒCƒ“ƒ^[ƒtƒF[ƒX‚ğÀ‘•‚·‚éê‡‚ÍA•K—v‚È‚¢ƒƒ\ƒbƒh‚à‹ó‚ÅÀ‘•‚µ‚È‚¯‚ê‚Î‚¢‚¯‚È‚¢‚ªAMouseMotionAdapterƒNƒ‰ƒX
-			 * ‚ÍMouseMotionListener‚Ìƒƒ\ƒbƒh‚ª‹ó‚ÅÀ‘•‚³‚ê‚½ƒNƒ‰ƒX‚Ìˆ×A•K—v‚Èƒƒ\ƒbƒh‚Ì‚İÀ‘•‚·‚ê‚Î‚æ‚­‚È‚éB
+			 * addMouseMotionListenerã•ã‚ŒãŸã‚³ãƒ³ãƒãƒ¼ãƒãƒ³ãƒˆã‚’ç›£è¦–ã—ãƒ‰ãƒ©ãƒƒã‚°ã‚¤ãƒ™ãƒ³ãƒˆãŒç™ºç”Ÿã—ãŸã‚‰å‡¦ç†ã‚’ã™ã‚‹ã‚¤ãƒ³ãƒŠãƒ¼ã‚¯ãƒ©ã‚¹<br />
+			 * ã‚¤ãƒ³ã‚¿ãƒ¼ãƒ•ã‚§ãƒ¼ã‚¹ã‚’å®Ÿè£…ã™ã‚‹å ´åˆã¯ã€å¿…è¦ãªã„ãƒ¡ã‚½ãƒƒãƒ‰ã‚‚ç©ºã§å®Ÿè£…ã—ãªã‘ã‚Œã°ã„ã‘ãªã„ãŒã€MouseMotionAdapterã‚¯ãƒ©ã‚¹
+			 * ã¯MouseMotionListenerã®ãƒ¡ã‚½ãƒƒãƒ‰ãŒç©ºã§å®Ÿè£…ã•ã‚ŒãŸã‚¯ãƒ©ã‚¹ã®ç‚ºã€å¿…è¦ãªãƒ¡ã‚½ãƒƒãƒ‰ã®ã¿å®Ÿè£…ã™ã‚Œã°ã‚ˆããªã‚‹ã€‚
 			 * @since 1.0
 			 * @see
 			 * java.awt.event.ActionListener#mouseDragged(java.awt.event.ActionEvent
 			 */
 			@Override
 			public void mouseDragged(MouseEvent e) {
-				// DrawCommandƒCƒ“ƒXƒ^ƒ“ƒX‚ğì¬‚µhistory(MacroCommand)‚ÉŠi”[‚·‚éB
+				// DrawCommandã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã‚’ä½œæˆã—history(MacroCommand)ã«æ ¼ç´ã™ã‚‹ã€‚
 				Command cmd = new DrawCommand(canvas, e.getPoint());
 				history.append(cmd);
-				// ƒRƒ}ƒ“ƒh‚ğÀs
+				// ã‚³ãƒãƒ³ãƒ‰ã‚’å®Ÿè¡Œ
 				cmd.execute();
 			}
 		});
 
-		// Šeƒ{ƒ^ƒ“‚ÉMouseActionListener‚ğ‚½‚¹‚éB
+		// å„ãƒœã‚¿ãƒ³ã«MouseActionListenerã‚’æŒãŸã›ã‚‹ã€‚
 		clearButton.addActionListener(this);
 		undoButton.addActionListener(this);
 		redFontButton.addActionListener(this);
@@ -87,22 +87,22 @@ public class Main extends JFrame implements ActionListener{
 		greenFontButton.addActionListener(this);
 		printButton.addActionListener(this);
 
-		// BoxƒNƒ‰ƒX‚ÍƒRƒ“ƒ|[ƒlƒ“ƒg‚ğì¬‚·‚éƒNƒ‰ƒX
-		// addƒƒ\ƒbƒh‚ÅƒRƒ“ƒ|[ƒlƒ“ƒgã‚ÉƒRƒ“ƒ|[ƒlƒ“ƒg‚ğì¬‚·‚éB
-		// X_AXIS ƒRƒ“ƒ|[ƒlƒ“ƒg‚ğ¶‚©‚ç‰E‚É•À‚×‚Ä•\¦‚·‚éB
+		// Boxã‚¯ãƒ©ã‚¹ã¯ã‚³ãƒ³ãƒãƒ¼ãƒãƒ³ãƒˆã‚’ä½œæˆã™ã‚‹ã‚¯ãƒ©ã‚¹
+		// addãƒ¡ã‚½ãƒƒãƒ‰ã§ã‚³ãƒ³ãƒãƒ¼ãƒãƒ³ãƒˆä¸Šã«ã‚³ãƒ³ãƒãƒ¼ãƒãƒ³ãƒˆã‚’ä½œæˆã™ã‚‹ã€‚
+		// X_AXIS ã‚³ãƒ³ãƒãƒ¼ãƒãƒ³ãƒˆã‚’å·¦ã‹ã‚‰å³ã«ä¸¦ã¹ã¦è¡¨ç¤ºã™ã‚‹ã€‚
 		Box buttonBox1 = new Box(BoxLayout.X_AXIS);
 		buttonBox1.add(undoButton);
 		buttonBox1.add(printButton);
 		buttonBox1.add(clearButton);
-		System.out.println("ƒ{ƒ^ƒ“ƒRƒ“ƒ|[ƒlƒ“ƒg1ã‚ÉƒAƒ“ƒhƒDƒ{ƒ^ƒ“Eˆóüƒ{ƒ^ƒ“EƒNƒŠƒAƒ{ƒ^ƒ“ì¬");
+		System.out.println("ãƒœã‚¿ãƒ³ã‚³ãƒ³ãƒãƒ¼ãƒãƒ³ãƒˆ1ä¸Šã«ã‚¢ãƒ³ãƒ‰ã‚¥ãƒœã‚¿ãƒ³ãƒ»å°åˆ·ãƒœã‚¿ãƒ³ãƒ»ã‚¯ãƒªã‚¢ãƒœã‚¿ãƒ³ä½œæˆ");
 
-		// Y_AXIS ƒRƒ“ƒ|[ƒlƒ“ƒg‚ğã‚©‚ç‰º‚É•À‚×‚Ä•\¦‚·‚éB
+		// Y_AXIS ã‚³ãƒ³ãƒãƒ¼ãƒãƒ³ãƒˆã‚’ä¸Šã‹ã‚‰ä¸‹ã«ä¸¦ã¹ã¦è¡¨ç¤ºã™ã‚‹ã€‚
 		Box mainBox = new Box(BoxLayout.Y_AXIS);
 		mainBox.add(canvas);
 		mainBox.add(buttonBox1);
-		System.out.println("ƒƒCƒ“ƒRƒ“ƒ|[ƒlƒ“ƒgã‚Éƒ{ƒ^ƒ“‚P‚ÆƒLƒƒƒ“ƒoƒXì¬");
+		System.out.println("ãƒ¡ã‚¤ãƒ³ã‚³ãƒ³ãƒãƒ¼ãƒãƒ³ãƒˆä¸Šã«ãƒœã‚¿ãƒ³ï¼‘ã¨ã‚­ãƒ£ãƒ³ãƒã‚¹ä½œæˆ");
 
-		// ƒLƒƒƒ“ƒoƒXƒ^ƒuì¬
+		// ã‚­ãƒ£ãƒ³ãƒã‚¹ã‚¿ãƒ–ä½œæˆ
 		JPanel canvasTab = new JPanel();
 		canvasTab.add(mainBox);
 
@@ -110,69 +110,69 @@ public class Main extends JFrame implements ActionListener{
 		buttonBox2.add(redFontButton);
 		buttonBox2.add(blueFontButton);
 		buttonBox2.add(greenFontButton);
-		System.out.println("ƒ{ƒ^ƒ“1ã‚ÉÔƒ{ƒ^ƒ“EÂƒ{ƒ^ƒ“E—Îƒ{ƒ^ƒ“ì¬");
+		System.out.println("ãƒœã‚¿ãƒ³1ä¸Šã«èµ¤ãƒœã‚¿ãƒ³ãƒ»é’ãƒœã‚¿ãƒ³ãƒ»ç·‘ãƒœã‚¿ãƒ³ä½œæˆ");
 		Box palletBox = new Box(BoxLayout.Y_AXIS);
 		palletBox.add(buttonBox2);
-		System.out.println("ƒpƒŒƒbƒgƒRƒ“ƒ|[ƒlƒ“ƒgã‚Éƒ{ƒ^ƒ“‚Qì¬");
+		System.out.println("ãƒ‘ãƒ¬ãƒƒãƒˆã‚³ãƒ³ãƒãƒ¼ãƒãƒ³ãƒˆä¸Šã«ãƒœã‚¿ãƒ³ï¼’ä½œæˆ");
 
-		// ƒpƒŒƒbƒgƒ^ƒuì¬
+		// ãƒ‘ãƒ¬ãƒƒãƒˆã‚¿ãƒ–ä½œæˆ
 		JPanel palletTab = new JPanel();
 		palletTab.add(palletBox);
 
-		// ƒ‹[ƒgƒ^ƒuì¬
+		// ãƒ«ãƒ¼ãƒˆã‚¿ãƒ–ä½œæˆ
 		JTabbedPane rootTab = new JTabbedPane(JTabbedPane.TOP, JTabbedPane.SCROLL_TAB_LAYOUT);
 		rootTab.setBounds(10, 10, 405, 405);
 		rootTab.addTab("canvas", canvasTab);
 		rootTab.addTab("pallet", palletTab);
 
-		// getContentPane‚Åƒ‹[ƒgƒRƒ“ƒ|[ƒlƒ“ƒg‚ğì¬‚·‚éB
+		// getContentPaneã§ãƒ«ãƒ¼ãƒˆã‚³ãƒ³ãƒãƒ¼ãƒãƒ³ãƒˆã‚’ä½œæˆã™ã‚‹ã€‚
 		getContentPane().add(rootTab);
-		// •Â‚¶‚½‚Æ‚«‚Ìˆ—
-		// ˆÈ‰º‚ÍƒfƒtƒHƒ‹ƒg’l‚È‚Ì‚Å‘‚©‚È‚­‚Ä‚à“®‚­B
-		// ƒpƒ‰ƒ[ƒ^
-		//	DISPOSE_ON_CLOSE	ƒEƒBƒ“ƒhƒE‚ğÁ‹‚µAƒŠƒ\[ƒX‚ğ”jŠü‚·‚éB
-		//	DO_NOTHING_ON_CLOSE	‰½‚à‚µ‚È‚¢BWindowListener‚ÌwindowClosing‚ÅƒŠƒ\[ƒX‚ğ”jŠü‚·‚é•K—v‚ª‚ ‚éB
-		//	EXIT_ON_CLOSE		JVM‚ğI—¹‚·‚éB
-		//	HIDE_ON_CLOSE		ƒEƒBƒ“ƒhƒE‚Ì•\¦‚ÍÁ‚¦‚é‚ªAƒŠƒ\[ƒX‚Í‘¶‘±‚µAÄ•\¦‚à‰Â”\
+		// é–‰ã˜ãŸã¨ãã®å‡¦ç†
+		// ä»¥ä¸‹ã¯ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆå€¤ãªã®ã§æ›¸ã‹ãªãã¦ã‚‚å‹•ãã€‚
+		// ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿
+		//	DISPOSE_ON_CLOSE	ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ã‚’æ¶ˆå»ã—ã€ãƒªã‚½ãƒ¼ã‚¹ã‚’ç ´æ£„ã™ã‚‹ã€‚
+		//	DO_NOTHING_ON_CLOSE	ä½•ã‚‚ã—ãªã„ã€‚WindowListenerã®windowClosingã§ãƒªã‚½ãƒ¼ã‚¹ã‚’ç ´æ£„ã™ã‚‹å¿…è¦ãŒã‚ã‚‹ã€‚
+		//	EXIT_ON_CLOSE		JVMã‚’çµ‚äº†ã™ã‚‹ã€‚
+		//	HIDE_ON_CLOSE		ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ã®è¡¨ç¤ºã¯æ¶ˆãˆã‚‹ãŒã€ãƒªã‚½ãƒ¼ã‚¹ã¯å­˜ç¶šã—ã€å†è¡¨ç¤ºã‚‚å¯èƒ½
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		System.out.println("ƒ‹[ƒgƒRƒ“ƒ|[ƒlƒ“ƒgã‚ÉƒƒCƒ“ƒRƒ“ƒ|[ƒlƒ“ƒg‚ğì¬");
+		System.out.println("ãƒ«ãƒ¼ãƒˆã‚³ãƒ³ãƒãƒ¼ãƒãƒ³ãƒˆä¸Šã«ãƒ¡ã‚¤ãƒ³ã‚³ãƒ³ãƒãƒ¼ãƒãƒ³ãƒˆã‚’ä½œæˆ");
 
-		// JFrame¨Frame¨WindowƒNƒ‰ƒX‚Ìƒƒ\ƒbƒh
-		// ŠeƒRƒ“ƒ|[ƒlƒ“ƒg‚æ‚èƒEƒBƒ“ƒhƒE‚ÌƒTƒCƒY‚ğ©“®’²®‚·‚éB‚±‚ê‚ª‚È‚¢‚Æ‰æ–Ê‚ÍÅ­ƒTƒCƒY‚É‚È‚éB
+		// JFrameâ†’Frameâ†’Windowã‚¯ãƒ©ã‚¹ã®ãƒ¡ã‚½ãƒƒãƒ‰
+		// å„ã‚³ãƒ³ãƒãƒ¼ãƒãƒ³ãƒˆã‚ˆã‚Šã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ã®ã‚µã‚¤ã‚ºã‚’è‡ªå‹•èª¿æ•´ã™ã‚‹ã€‚ã“ã‚ŒãŒãªã„ã¨ç”»é¢ã¯æœ€å°‘ã‚µã‚¤ã‚ºã«ãªã‚‹ã€‚
 		pack();
-		// ƒEƒBƒ“ƒhƒE•\¦
+		// ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦è¡¨ç¤º
 		setVisible(true);
-		System.out.println("ƒEƒBƒ“ƒhƒE•\¦");
+		System.out.println("ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦è¡¨ç¤º");
 	}
 
 	/**
-	 * addActionListener‚³‚ê‚½ƒRƒ“ƒ|[ƒlƒ“ƒg‚ğŠÄ‹‚µƒCƒxƒ“ƒg‚ª”­¶‚µ‚½‚çˆ—‚ğ‚·‚éB
+	 * addActionListenerã•ã‚ŒãŸã‚³ãƒ³ãƒãƒ¼ãƒãƒ³ãƒˆã‚’ç›£è¦–ã—ã‚¤ãƒ™ãƒ³ãƒˆãŒç™ºç”Ÿã—ãŸã‚‰å‡¦ç†ã‚’ã™ã‚‹ã€‚
 	 * @since 1.0
 	 * @see
 	 * java.awt.event.ActionListener#actionPerformed(java.awt.event.ActionEvent)
 	 */
 	@Override
 	public void actionPerformed(ActionEvent e){
-		// ƒAƒNƒVƒ‡ƒ“ƒCƒxƒ“ƒg”­¶Œ³‚ªƒNƒŠƒAƒ{ƒ^ƒ“‚Ìê‡
+		// ã‚¢ã‚¯ã‚·ãƒ§ãƒ³ã‚¤ãƒ™ãƒ³ãƒˆç™ºç”Ÿå…ƒãŒã‚¯ãƒªã‚¢ãƒœã‚¿ãƒ³ã®å ´åˆ
 		if(clearButton.equals(e.getSource())){
-			// MacroCommand‚É—­‚Ü‚Á‚½ƒCƒxƒ“ƒg—š—ğ‚ğ‘S‚ÄƒNƒŠƒA‚·‚éB
+			// MacroCommandã«æºœã¾ã£ãŸã‚¤ãƒ™ãƒ³ãƒˆå±¥æ­´ã‚’å…¨ã¦ã‚¯ãƒªã‚¢ã™ã‚‹ã€‚
 			history.clear();
-			// Ä•`‰æ
-			// DrawCanvas¨Canvas¨ComponentƒX[ƒpƒNƒ‰ƒX‚Ìƒƒ\ƒbƒh
+			// å†æç”»
+			// DrawCanvasâ†’Canvasâ†’Componentã‚¹ãƒ¼ãƒ‘ã‚¯ãƒ©ã‚¹ã®ãƒ¡ã‚½ãƒƒãƒ‰
 			canvas.init();
 			canvas.repaint();
 
 			System.out.println("Clear Event execute success");
 
-		// ƒAƒNƒVƒ‡ƒ“ƒCƒxƒ“ƒg”­¶Œ³‚ªƒAƒ“ƒhƒDƒ{ƒ^ƒ“‚Ìê‡
+		// ã‚¢ã‚¯ã‚·ãƒ§ãƒ³ã‚¤ãƒ™ãƒ³ãƒˆç™ºç”Ÿå…ƒãŒã‚¢ãƒ³ãƒ‰ã‚¥ãƒœã‚¿ãƒ³ã®å ´åˆ
 		}else if(undoButton.equals(e.getSource())){
 			history.undo();
-			// DrawCanvas¨Canvas¨ComponentƒX[ƒpƒNƒ‰ƒX‚Ìƒƒ\ƒbƒh
+			// DrawCanvasâ†’Canvasâ†’Componentã‚¹ãƒ¼ãƒ‘ã‚¯ãƒ©ã‚¹ã®ãƒ¡ã‚½ãƒƒãƒ‰
 			canvas.repaint();
 
 			System.out.println("Undo Event execute success");
 
-		// ƒAƒNƒVƒ‡ƒ“ƒCƒxƒ“ƒg”­¶Œ³‚ªÔƒ{ƒ^ƒ“‚Ìê‡
+		// ã‚¢ã‚¯ã‚·ãƒ§ãƒ³ã‚¤ãƒ™ãƒ³ãƒˆç™ºç”Ÿå…ƒãŒèµ¤ãƒœã‚¿ãƒ³ã®å ´åˆ
 		}else if(redFontButton.equals(e.getSource())){
 			Command cmd = new ColorCommand(canvas, Color.RED);
 			history.append(cmd);
@@ -180,7 +180,7 @@ public class Main extends JFrame implements ActionListener{
 
 			System.out.println("ChangeColor Red Event execute success");
 
-		// ƒAƒNƒVƒ‡ƒ“ƒCƒxƒ“ƒg”­¶Œ³‚ªÂƒ{ƒ^ƒ“‚Ìê‡
+		// ã‚¢ã‚¯ã‚·ãƒ§ãƒ³ã‚¤ãƒ™ãƒ³ãƒˆç™ºç”Ÿå…ƒãŒé’ãƒœã‚¿ãƒ³ã®å ´åˆ
 		}else if(blueFontButton.equals(e.getSource())){
 			Command cmd = new ColorCommand(canvas, Color.BLUE);
 			history.append(cmd);
@@ -188,7 +188,7 @@ public class Main extends JFrame implements ActionListener{
 
 			System.out.println("ChangeColor Blue Event execute success");
 
-		// ƒAƒNƒVƒ‡ƒ“ƒCƒxƒ“ƒg”­¶Œ³‚ª—Îƒ{ƒ^ƒ“‚Ìê‡
+		// ã‚¢ã‚¯ã‚·ãƒ§ãƒ³ã‚¤ãƒ™ãƒ³ãƒˆç™ºç”Ÿå…ƒãŒç·‘ãƒœã‚¿ãƒ³ã®å ´åˆ
 		}else if(greenFontButton.equals(e.getSource())){
 			Command cmd = new ColorCommand(canvas, Color.GREEN);
 			history.append(cmd);
@@ -196,10 +196,10 @@ public class Main extends JFrame implements ActionListener{
 
 			System.out.println("ChangeColor Green Event execute success");
 
-		// ƒAƒNƒVƒ‡ƒ“ƒCƒxƒ“ƒg”­¶Œ³‚ªˆóüƒ{ƒ^ƒ“‚Ìê‡
+		// ã‚¢ã‚¯ã‚·ãƒ§ãƒ³ã‚¤ãƒ™ãƒ³ãƒˆç™ºç”Ÿå…ƒãŒå°åˆ·ãƒœã‚¿ãƒ³ã®å ´åˆ
 		}else if(printButton.equals(e.getSource())){
-			System.out.println("‰æ‘œ•Û‘¶’†EEE");
-			// ƒRƒ}ƒ“ƒh—š—ğ‚É‚Í’Ç‰Á‚µ‚È‚¢B
+			System.out.println("ç”»åƒä¿å­˜ä¸­ãƒ»ãƒ»ãƒ»");
+			// ã‚³ãƒãƒ³ãƒ‰å±¥æ­´ã«ã¯è¿½åŠ ã—ãªã„ã€‚
 			Command cmd = new PrintCommand(canvas);
 			cmd.execute();
 
@@ -208,7 +208,7 @@ public class Main extends JFrame implements ActionListener{
 	}
 
 	/**
-	 * ƒƒCƒ“ƒNƒ‰ƒX
+	 * ãƒ¡ã‚¤ãƒ³ã‚¯ãƒ©ã‚¹
 	 * @since 1.0
 	 * @param args
 	 */

@@ -1,15 +1,15 @@
 package factoryMethod.framework;
 
 /**
- * Procuct’ŠÛƒNƒ‰ƒX<br />
- * ‚»‚Ì‚±‚Æ‚Å"»•i‚ðŽg‚¤‚±‚Æ"‚Æ‚¢‚¤ŠÖSŽ–‚ð’è‹`‚·‚éB
+ * ProcuctæŠ½è±¡ã‚¯ãƒ©ã‚¹<br />
+ * ãã®ã“ã¨ã§"è£½å“ã‚’ä½¿ã†ã“ã¨"ã¨ã„ã†é–¢å¿ƒäº‹ã‚’å®šç¾©ã™ã‚‹ã€‚
  * @author urushibata
  * @version 1.0
  */
 public abstract class Product{
 	/**
-	 * »•i‚ðŽg‚¤ƒƒ\ƒbƒh<br />
-	 * ‰½‚ð‚Ç‚¤Žg‚¤‚Ì‚©‚Í‹ïÛƒNƒ‰ƒX‚É”C‚¹‚éB
+	 * è£½å“ã‚’ä½¿ã†ãƒ¡ã‚½ãƒƒãƒ‰<br />
+	 * ä½•ã‚’ã©ã†ä½¿ã†ã®ã‹ã¯å…·è±¡ã‚¯ãƒ©ã‚¹ã«ä»»ã›ã‚‹ã€‚
 	 * since 1.0
 	 */
 	public abstract void use();

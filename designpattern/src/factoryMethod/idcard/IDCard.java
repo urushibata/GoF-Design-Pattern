@@ -3,7 +3,7 @@ package factoryMethod.idcard;
 import factoryMethod.framework.Product;
 
 /**
- * Product’ŠÛƒNƒ‰ƒX‚ðŒp³‚µ‚½IDƒJ[ƒh‹ïÛƒNƒ‰ƒX
+ * ProductæŠ½è±¡ã‚¯ãƒ©ã‚¹ã‚’ç¶™æ‰¿ã—ãŸIDã‚«ãƒ¼ãƒ‰å…·è±¡ã‚¯ãƒ©ã‚¹
  * @author urushibata
  * @version 1.0
  */
@@ -15,7 +15,7 @@ public class IDCard extends Product{
 	 * @since 1.0
 	 */
 	public IDCard(String owner){
-		System.out.println(owner + "‚ÌƒJ[ƒh‚ðì‚è‚Ü‚·B");
+		System.out.println(owner + "ã®ã‚«ãƒ¼ãƒ‰ã‚’ä½œã‚Šã¾ã™ã€‚");
 		this.owner = owner;
 	}
 
@@ -25,7 +25,7 @@ public class IDCard extends Product{
 	 */
 	@Override
 	public void use() {
-		System.out.println(owner + "‚ÌƒJ[ƒh‚ðŽg‚¢‚Ü‚·B");
+		System.out.println(owner + "ã®ã‚«ãƒ¼ãƒ‰ã‚’ä½¿ã„ã¾ã™ã€‚");
 	}
 
 	/**

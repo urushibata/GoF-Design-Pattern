@@ -10,7 +10,7 @@ import java.util.Properties;
  */
 public class Database{
 	private Database(){}
-	
+
 	/**
 	 * @param dbname
 	 * @return Properties

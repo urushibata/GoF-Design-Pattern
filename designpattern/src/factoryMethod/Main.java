@@ -5,27 +5,27 @@ import factoryMethod.framework.Product;
 import factoryMethod.idcard.IDCardFactory;
 
 /**
- * factoryMethodƒpƒ^[ƒ“ƒƒCƒ“ƒNƒ‰ƒX<br />
+ * factoryMethodãƒ‘ã‚¿ãƒ¼ãƒ³ãƒ¡ã‚¤ãƒ³ã‚¯ãƒ©ã‚¹<br />
  * @author urushibata
  * @version 1.0
  */
 public class Main {
 
 	/**
-	 * ƒƒCƒ“ˆ—
+	 * ãƒ¡ã‚¤ãƒ³å‡¦ç†
 	 * @param args
 	 * @since 1.0
 	 */
 	public static void main(String[] args) {
-		// IDCardFactoryƒNƒ‰ƒX¶¬
+		// IDCardFactoryã‚¯ãƒ©ã‚¹ç”Ÿæˆ
 		Factory factory = new IDCardFactory();
 
-		// Šeˆø”‚Ìl•¨‚ÌIDƒJ[ƒh‚ğì¬‚·‚éB
-		Product card1 = factory.create("Œ‹é_");
-		Product card2 = factory.create("½”¨^–ç");
-		Product card3 = factory.create("‰H¶‘P¡");
+		// å„å¼•æ•°ã®äººç‰©ã®IDã‚«ãƒ¼ãƒ‰ã‚’ä½œæˆã™ã‚‹ã€‚
+		Product card1 = factory.create("çµåŸæµ©");
+		Product card2 = factory.create("æ¼†ç•‘çœŸä¹Ÿ");
+		Product card3 = factory.create("ç¾½ç”Ÿå–„æ²»");
 
-		// ƒJ[ƒh‚ğg—p‚·‚éB
+		// ã‚«ãƒ¼ãƒ‰ã‚’ä½¿ç”¨ã™ã‚‹ã€‚
 		card1.use();
 		card2.use();
 		card3.use();

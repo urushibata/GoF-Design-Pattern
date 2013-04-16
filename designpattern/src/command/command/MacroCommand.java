@@ -6,20 +6,20 @@ import java.util.Iterator;
 
 /**
  * @author urushibata
- * –½—ß‚ÌW‡ƒNƒ‰ƒX
+ * å‘½ä»¤ã®é›†åˆã‚¯ãƒ©ã‚¹
  */
 public class MacroCommand implements Command{
 
 	/*
 	 * @see command.cmmand.Command#execute()
 	 */
-	// –½—ß‚ÌW‡(ƒXƒ^ƒbƒN:LIFO)
+	// å‘½ä»¤ã®é›†åˆ(ã‚¹ã‚¿ãƒƒã‚¯:LIFO)
 	//private ArrayDeque<Command> commands = new ArrayDeque<Command>();
-	// –½—ß‚ÌW‡(ƒLƒ…[:FIFO)
-	// LinkedList‚ÍÀÛA—¼’[ƒLƒ…[(deque:ƒfƒbƒN)‚Å‚ ‚é‚ªAJava‚Å‚ÍƒLƒ…[\‘¢‚Ì˜AŒ‹ƒŠƒXƒg‚ª‚È‚¢‚Ì‚Å—¼’[ƒLƒ…[‚ğg—p‚µ‚ÄƒLƒ…[\‘¢‚ğÀ‘•‚·‚éB
+	// å‘½ä»¤ã®é›†åˆ(ã‚­ãƒ¥ãƒ¼:FIFO)
+	// LinkedListã¯å®Ÿéš›ã€ä¸¡ç«¯ã‚­ãƒ¥ãƒ¼(deque:ãƒ‡ãƒƒã‚¯)ã§ã‚ã‚‹ãŒã€Javaã§ã¯ã‚­ãƒ¥ãƒ¼æ§‹é€ ã®é€£çµãƒªã‚¹ãƒˆãŒãªã„ã®ã§ä¸¡ç«¯ã‚­ãƒ¥ãƒ¼ã‚’ä½¿ç”¨ã—ã¦ã‚­ãƒ¥ãƒ¼æ§‹é€ ã‚’å®Ÿè£…ã™ã‚‹ã€‚
 	private LinkedList<Command> commands = new LinkedList<Command>();
 
-	// Às
+	// å®Ÿè¡Œ
 	@Override
 	public void execute(){
 		Iterator<Command> it = commands.iterator();
@@ -29,19 +29,19 @@ public class MacroCommand implements Command{
 	}
 
 	/**
-	 * @param cmd DrawComandƒCƒ“ƒXƒ^ƒ“ƒX‚ªCommandŒ^‚Å“n‚³‚ê‚éB
-	 * ƒRƒ}ƒ“ƒh‚ğ—š—ğ‚É’Ç‰Á‚·‚éB
+	 * @param cmd DrawComandã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ãŒCommandå‹ã§æ¸¡ã•ã‚Œã‚‹ã€‚
+	 * ã‚³ãƒãƒ³ãƒ‰ã‚’å±¥æ­´ã«è¿½åŠ ã™ã‚‹ã€‚
 	 */
 	public void append(Command cmd){
-		// ƒRƒ}ƒ“ƒh‚ª©•ª©gˆÈŠO‚Ìê‡
+		// ã‚³ãƒãƒ³ãƒ‰ãŒè‡ªåˆ†è‡ªèº«ä»¥å¤–ã®å ´åˆ
 		if (cmd != this) {
-			// MacroCommand‚ÉƒRƒ}ƒ“ƒh‚ğ’Ç‰Á
-			// push‚ÍƒŠƒXƒg‚Ìæ“ª‚É‘}“ü‚³‚ê‚é(Stack‚Ìê‡)B
+			// MacroCommandã«ã‚³ãƒãƒ³ãƒ‰ã‚’è¿½åŠ 
+			// pushã¯ãƒªã‚¹ãƒˆã®å…ˆé ­ã«æŒ¿å…¥ã•ã‚Œã‚‹(Stackã®å ´åˆ)ã€‚
 			//commands.push(cmd);
-			// offer‚ÍƒŠƒXƒg‚ÌÅŒã”ö‚É‘}“ü‚³‚ê‚é(Queue‚Ìê‡)B
+			// offerã¯ãƒªã‚¹ãƒˆã®æœ€å¾Œå°¾ã«æŒ¿å…¥ã•ã‚Œã‚‹(Queueã®å ´åˆ)ã€‚
 			commands.offer(cmd);
 
-			System.out.println("’Ç‰ÁŒãcommands:[");
+			System.out.println("è¿½åŠ å¾Œcommands:[");
 			int i = 0;
 			for(Command c: commands){
 				System.out.println("MacroCommand.commands[" + i + "]:" + c);
@@ -51,22 +51,22 @@ public class MacroCommand implements Command{
 		}
 	}
 
-	// ÅŒã‚Ì–½—ß‚ğíœ
+	// æœ€å¾Œã®å‘½ä»¤ã‚’å‰Šé™¤
 	public void undo() {
-		System.out.println("Undo‘OMacroCommand‚Ì’†gF" + commands);
-		// ƒRƒ}ƒ“ƒh‚ª©•ª©gˆÈŠO‚Ìê‡
+		System.out.println("Undoå‰MacroCommandã®ä¸­èº«ï¼š" + commands);
+		// ã‚³ãƒãƒ³ãƒ‰ãŒè‡ªåˆ†è‡ªèº«ä»¥å¤–ã®å ´åˆ
 		if (!commands.isEmpty()){
-			// ƒŠƒXƒg‚Ìæ“ª‚ç–½—ß‚ğˆê‚Âíœ‚·‚éB
+			// ãƒªã‚¹ãƒˆã®å…ˆé ­ã‚‰å‘½ä»¤ã‚’ä¸€ã¤å‰Šé™¤ã™ã‚‹ã€‚
 			//commands.pop();
-			// ƒŠƒXƒg‚ÌÅŒã”ö‚©‚ç–½—ß‚ğˆê‚Âíœ‚·‚éB
+			// ãƒªã‚¹ãƒˆã®æœ€å¾Œå°¾ã‹ã‚‰å‘½ä»¤ã‚’ä¸€ã¤å‰Šé™¤ã™ã‚‹ã€‚
 			commands.pollLast();
-			System.out.println("UndoŒãMacroCommand‚Ì’†gF" + commands);
+			System.out.println("Undoå¾ŒMacroCommandã®ä¸­èº«ï¼š" + commands);
 		}
 	}
 
-	// ‘S•”íœ
+	// å…¨éƒ¨å‰Šé™¤
 	public void clear() {
-		// ƒRƒ}ƒ“ƒh—š—ğ‚ª‚ ‚éê‡
+		// ã‚³ãƒãƒ³ãƒ‰å±¥æ­´ãŒã‚ã‚‹å ´åˆ
 		if (!commands.isEmpty()) {
 			commands.clear();
 		}

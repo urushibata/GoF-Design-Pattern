@@ -7,7 +7,7 @@ import factoryMethod.framework.Factory;
 import factoryMethod.framework.Product;
 
 /**
- * Factory抽象クラスを継承したIDカード工場具象クラス
+ * Factory謚ｽ雎｡繧ｯ繝ｩ繧ｹ繧堤ｶ呎価縺励◆ID繧ｫ繝ｼ繝牙ｷ･蝣ｴ蜈ｷ雎｡繧ｯ繝ｩ繧ｹ
  * @author urushibata
  * @version 1.0
  */
