@@ -1,0 +1,17 @@
+package facade.pagemaker;
+
+import java.io.IOException;
+
+public class Database {
+	private Database(){}
+	
+	public static Properties getProperties(String dbname){
+		String filename = dbname + ".txt";
+		Properties prop = new Properties();
+		try{
+			prop.load(new FileInputStream(filename));
+		}catch(IOException){
+			System.out.println();
+		}
+	}
+}

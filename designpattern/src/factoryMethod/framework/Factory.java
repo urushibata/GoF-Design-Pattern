@@ -6,7 +6,7 @@ package factoryMethod.framework;
  * @author urushibata
  * @version 1.0
  */
-public abstract class Factory {
+public abstract class Factory{
 	/**
 	 * @param owner
 	 * @return Product

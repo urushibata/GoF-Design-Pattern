@@ -13,8 +13,8 @@
 		</list>
 	</section>
 	<section name="WorkbenchPreferenceDialogSettings">
-		<item value="4" key="DIALOG_Y_ORIGIN"/>
-		<item value="4" key="DIALOG_X_ORIGIN"/>
+		<item value="169" key="DIALOG_Y_ORIGIN"/>
+		<item value="275" key="DIALOG_X_ORIGIN"/>
 	</section>
 	<section name="InstallationDialogSettings">
 		<item value="584" key="DIALOG_WIDTH"/>
@@ -24,6 +24,10 @@
 		<item value="1|MS UI Gothic|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|MS UI Gothic" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="NewWizardAction">
+		<item value="org.eclipse.ui.wizards.new.file" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.ui.Basic"/>
+		</list>
 	</section>
 	<section name="org.eclipse.ui.preferences.keysPreferencePage">
 		<item value="true" key="uncategorizedFilter"/>

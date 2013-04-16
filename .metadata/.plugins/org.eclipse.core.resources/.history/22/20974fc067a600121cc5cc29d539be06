@@ -1,0 +1,5 @@
+package facade.pagemaker;
+
+public class Database {
+	private Database(){}
+}

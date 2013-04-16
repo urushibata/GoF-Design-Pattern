@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="35" version="2.0">
+<workbench progressCount="36" version="2.0">
 <workbenchAdvisor/>
 <window height="768" maximized="true" width="1024" x="176" y="79">
 <fastViewData fastViewLocation="1024"/>
@@ -24,6 +24,7 @@
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="177" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.ui.browser.editor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
@@ -38,31 +39,21 @@
 <part id="0"/>
 <part id="1"/>
 <part id="2"/>
-<part id="3"/>
-<part id="4"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Product.java" partName="Product.java" path="D:/usr/work/java-project/project-002/designpattern/src/factoryMethod/framework/Product.java" title="Product.java" tooltip="designpattern/src/factoryMethod/framework/Product.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/designpattern/src/factoryMethod/framework/Product.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="278" selectionTopPixel="0"/>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Database.java" partName="Database.java" path="D:/usr/work/java-project/project-002/designpattern/src/facade/pagemaker/Database.java" title="Database.java" tooltip="designpattern/src/facade/pagemaker/Database.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/designpattern/src/facade/pagemaker/Database.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="246" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Factory.java" partName="Factory.java" path="D:/usr/work/java-project/project-002/designpattern/src/factoryMethod/framework/Factory.java" title="Factory.java" tooltip="designpattern/src/factoryMethod/framework/Factory.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/designpattern/src/factoryMethod/framework/Factory.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="31" selectionTopPixel="0"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="HtmlWriter.java" partName="HtmlWriter.java" path="D:/usr/work/java-project/project-002/designpattern/src/facade/pagemaker/HtmlWriter.java" title="HtmlWriter.java" tooltip="designpattern/src/facade/pagemaker/HtmlWriter.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/designpattern/src/facade/pagemaker/HtmlWriter.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="299" selectionTopPixel="540"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="IDCard.java" partName="IDCard.java" path="D:/usr/work/java-project/project-002/designpattern/src/factoryMethod/idcard/IDCard.java" title="IDCard.java" tooltip="designpattern/src/factoryMethod/idcard/IDCard.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/designpattern/src/factoryMethod/idcard/IDCard.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="533" selectionTopPixel="204"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="IDCardFactory.java" partName="IDCardFactory.java" path="D:/usr/work/java-project/project-002/designpattern/src/factoryMethod/idcard/IDCardFactory.java" title="IDCardFactory.java" tooltip="designpattern/src/factoryMethod/idcard/IDCardFactory.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/designpattern/src/factoryMethod/idcard/IDCardFactory.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4" selectionTopPixel="0"/>
-</editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Main.java" partName="Main.java" path="D:/usr/work/java-project/project-002/designpattern/src/factoryMethod/Main.java" title="Main.java" tooltip="designpattern/src/factoryMethod/Main.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/designpattern/src/factoryMethod/Main.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="427" selectionTopPixel="0"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PageMaker.java" partName="PageMaker.java" path="D:/usr/work/java-project/project-002/designpattern/src/facade/pagemaker/PageMaker.java" title="PageMaker.java" tooltip="designpattern/src/facade/pagemaker/PageMaker.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/designpattern/src/facade/pagemaker/PageMaker.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="858" selectionTopPixel="161"/>
 </editor>
 </editors>
 <views>
@@ -71,6 +62,9 @@
 </view>
 <view id="org.eclipse.ui.views.ProblemView" partName="問題">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="問題">
+<expanded>
+<category IMemento.internal.id="エラー"/>
+</expanded>
 <columnWidths org.eclipse.ui.ide.locationField="75" org.eclipse.ui.ide.markerType="75" org.eclipse.ui.ide.pathField="100" org.eclipse.ui.ide.resourceField="75" org.eclipse.ui.ide.severityAndDescriptionField="556"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
@@ -237,7 +231,7 @@
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.19258203" ratioLeft="270" ratioRight="1132" relationship="2" relative="left"/>
-<info folder="true" part="bottom" ratio="0.6675639" ratioLeft="496" ratioRight="247" relationship="4" relative="org.eclipse.ui.editorss">
+<info folder="true" part="bottom" ratio="0.7671602" ratioLeft="570" ratioRight="173" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="問題"/>
 <page content="org.eclipse.jdt.ui.JavadocView" label="Javadoc"/>
@@ -277,162 +271,162 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/designpattern/src/factoryMethod/idcard/IDCardFactory.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/designpattern/src/factoryMethod/idcard/IDCard.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/designpattern/src/factoryMethod/Main.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/designpattern/src/facade/pagemaker/Database.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/designpattern/src/facade/pagemaker/HtmlWriter.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/designpattern/src/facade/pagemaker/PageMaker.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/designpattern/src/factoryMethod/framework/Factory.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/designpattern/src/factoryMethod/framework/Product.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/designpattern/src/command/Main.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/designpattern/src/facade/Main.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/designpattern/src/facade/maildata.txt"/>
 </editors>
-<item historyLabel="IDCard.java" index="1">
-<position info="not_deleted" x="150" y="0"/>
+<item historyLabel="PageMaker.java" index="2">
+<position info="not_deleted" x="974" y="0"/>
+</item>
+<item historyLabel="PageMaker.java" index="2">
+<position info="not_deleted" x="450" y="0"/>
+</item>
+<item historyLabel="Database.java" index="0">
+<position info="not_deleted" x="503" y="0"/>
+</item>
+<item historyLabel="PageMaker.java" index="2">
+<position info="not_deleted" x="450" y="0"/>
+</item>
+<item historyLabel="PageMaker.java" index="2">
+<position info="not_deleted" x="675" y="0"/>
+</item>
+<item historyLabel="PageMaker.java" index="2">
+<position info="not_deleted" x="723" y="0"/>
+</item>
+<item historyLabel="PageMaker.java" index="2">
+<position info="not_deleted" x="908" y="0"/>
 </item>
 <item historyLabel="Factory.java" index="3">
-<position info="not_deleted" x="137" y="0"/>
+<position info="not_deleted" x="362" y="0"/>
 </item>
-<item historyLabel="Product.java" index="4">
-<position info="not_deleted" x="118" y="0"/>
-</item>
-<item historyLabel="IDCard.java" index="1">
-<position info="not_deleted" x="134" y="0"/>
-</item>
-<item historyLabel="IDCardFactory.java" index="0">
-<position info="not_deleted" x="234" y="0"/>
-</item>
-<item historyLabel="Factory.java" index="3">
-<position info="not_deleted" x="137" y="0"/>
-</item>
-<item historyLabel="Product.java" index="4">
-<position info="not_deleted" x="278" y="0"/>
-</item>
-<item historyLabel="IDCard.java" index="1">
-<position info="not_deleted" x="376" y="0"/>
-</item>
-<item historyLabel="IDCardFactory.java" index="0">
-<position info="not_deleted" x="572" y="0"/>
-</item>
-<item historyLabel="IDCard.java" index="1">
-<position info="not_deleted" x="376" y="0"/>
-</item>
-<item historyLabel="Factory.java" index="3">
-<position info="not_deleted" x="137" y="0"/>
-</item>
-<item historyLabel="Product.java" index="4">
-<position info="not_deleted" x="166" y="0"/>
-</item>
-<item historyLabel="Factory.java" index="3">
-<position/>
-</item>
-<item historyLabel="IDCard.java" index="1">
-<position info="not_deleted" x="281" y="0"/>
-</item>
-<item historyLabel="IDCardFactory.java" index="0">
-<position info="not_deleted" x="572" y="0"/>
-</item>
-<item historyLabel="IDCard.java" index="1">
-<position/>
-</item>
-<item historyLabel="IDCardFactory.java" index="0">
-<position info="not_deleted" x="251" y="0"/>
-</item>
-<item historyLabel="Main.java" index="2">
-<position info="not_deleted" x="264" y="0"/>
-</item>
-<item historyLabel="Factory.java" index="3">
+<item historyLabel="Main.java" index="4">
 <position info="not_deleted" x="165" y="0"/>
 </item>
-<item historyLabel="Product.java" index="4">
-<position info="not_deleted" x="109" y="0"/>
+<item historyLabel="Factory.java" index="3">
+<position info="not_deleted" x="361" y="0"/>
 </item>
-<item historyLabel="Main.java" index="2">
-<position info="not_deleted" x="1" y="0"/>
-</item>
-<item historyLabel="IDCardFactory.java" index="0">
-<position info="not_deleted" x="729" y="0"/>
-</item>
-<item historyLabel="Main.java" index="2">
-<position info="not_deleted" x="1" y="0"/>
-</item>
-<item historyLabel="IDCardFactory.java" index="0">
-<position info="not_deleted" x="729" y="0"/>
-</item>
-<item historyLabel="Product.java" index="4">
-<position info="not_deleted" x="109" y="0"/>
+<item historyLabel="PageMaker.java" index="2">
+<position info="not_deleted" x="431" y="0"/>
 </item>
 <item historyLabel="Factory.java" index="3">
-<position info="not_deleted" x="85" y="0"/>
+<position info="not_deleted" x="361" y="0"/>
 </item>
-<item historyLabel="Product.java" index="4">
-<position info="not_deleted" x="109" y="0"/>
+<item historyLabel="HtmlWriter.java" index="1">
+<position info="not_deleted" x="171" y="0"/>
 </item>
-<item historyLabel="IDCard.java" index="1">
+<item historyLabel="Database.java" index="0">
+<position info="not_deleted" x="194" y="0"/>
+</item>
+<item historyLabel="HtmlWriter.java" index="1">
+<position info="not_deleted" x="157" y="0"/>
+</item>
+<item historyLabel="PageMaker.java" index="2">
+<position info="not_deleted" x="431" y="0"/>
+</item>
+<item historyLabel="Factory.java" index="3">
+<position info="not_deleted" x="188" y="0"/>
+</item>
+<item historyLabel="PageMaker.java" index="2">
+<position info="not_deleted" x="431" y="0"/>
+</item>
+<item historyLabel="Main.java" index="4">
+<position info="not_deleted" x="291" y="0"/>
+</item>
+<item historyLabel="Database.java" index="0">
+<position info="not_deleted" x="194" y="0"/>
+</item>
+<item historyLabel="HtmlWriter.java" index="1">
+<position info="not_deleted" x="157" y="0"/>
+</item>
+<item historyLabel="PageMaker.java" index="2">
+<position info="not_deleted" x="247" y="0"/>
+</item>
+<item historyLabel="Main.java" index="4">
+<position info="not_deleted" x="291" y="0"/>
+</item>
+<item historyLabel="HtmlWriter.java" index="1">
+<position info="not_deleted" x="684" y="0"/>
+</item>
+<item historyLabel="Database.java" index="0">
+<position info="not_deleted" x="578" y="0"/>
+</item>
+<item historyLabel="Main.java" index="4">
+<position info="not_deleted" x="291" y="0"/>
+</item>
+<item historyLabel="PageMaker.java" index="2">
+<position info="not_deleted" x="247" y="0"/>
+</item>
+<item historyLabel="Main.java" index="4">
+<position info="not_deleted" x="291" y="0"/>
+</item>
+<item historyLabel="PageMaker.java" index="2">
+<position info="not_deleted" x="535" y="0"/>
+</item>
+<item historyLabel="Main.java" index="4">
+<position info="not_deleted" x="291" y="0"/>
+</item>
+<item historyLabel="PageMaker.java" index="2">
+<position info="not_deleted" x="535" y="0"/>
+</item>
+<item historyLabel="Database.java" index="0">
+<position info="not_deleted" x="578" y="0"/>
+</item>
+<item historyLabel="PageMaker.java" index="2">
+<position info="not_deleted" x="535" y="0"/>
+</item>
+<item historyLabel="Database.java" index="0">
+<position info="not_deleted" x="578" y="0"/>
+</item>
+<item historyLabel="HtmlWriter.java" index="1">
+<position info="not_deleted" x="1431" y="0"/>
+</item>
+<item historyLabel="PageMaker.java" index="2">
+<position info="not_deleted" x="535" y="0"/>
+</item>
+<item historyLabel="Database.java" index="0">
+<position info="not_deleted" x="542" y="0"/>
+</item>
+<item historyLabel="Main.java" index="4">
+<position info="not_deleted" x="291" y="0"/>
+</item>
+<item historyLabel="maildata.txt" index="5">
 <position/>
 </item>
-<item historyLabel="IDCardFactory.java" index="0">
-<position info="not_deleted" x="729" y="0"/>
+<item historyLabel="Main.java" index="4">
+<position info="not_deleted" x="291" y="0"/>
 </item>
-<item historyLabel="Main.java" index="2">
-<position info="not_deleted" x="1" y="0"/>
-</item>
-<item historyLabel="Main.java" index="5">
-<position/>
-</item>
-<item historyLabel="Main.java" index="5">
-<position/>
-</item>
-<item historyLabel="Main.java" index="2">
-<position info="not_deleted" x="296" y="0"/>
-</item>
-<item historyLabel="IDCardFactory.java" index="0">
-<position info="not_deleted" x="4" y="0"/>
-</item>
-<item historyLabel="IDCard.java" index="1">
-<position info="not_deleted" x="533" y="0"/>
-</item>
-<item historyLabel="Factory.java" index="3">
-<position info="not_deleted" x="31" y="0"/>
-</item>
-<item historyLabel="Product.java" index="4">
-<position info="not_deleted" x="268" y="0"/>
-</item>
-<item historyLabel="Main.java" index="2">
-<position info="not_deleted" x="156" y="0"/>
-</item>
-<item historyLabel="Factory.java" index="3">
-<position info="not_deleted" x="31" y="0"/>
-</item>
-<item historyLabel="Product.java" index="4">
-<position info="not_deleted" x="268" y="0"/>
-</item>
-<item historyLabel="Factory.java" index="3">
-<position info="not_deleted" x="31" y="0"/>
-</item>
-<item historyLabel="Product.java" index="4">
-<position info="not_deleted" x="278" y="0"/>
-</item>
-<item historyLabel="Main.java" index="2">
-<position info="not_deleted" x="271" y="0"/>
-</item>
-<item historyLabel="Main.java" index="5">
+<item historyLabel="PageMaker.java" index="2">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="Factory.java" index="3">
-<position info="not_deleted" x="31" y="0"/>
+<item historyLabel="HtmlWriter.java" index="1">
+<position info="not_deleted" x="299" y="0"/>
 </item>
-<item historyLabel="Main.java" index="2">
-<position info="not_deleted" x="271" y="0"/>
+<item historyLabel="Database.java" index="0">
+<position info="not_deleted" x="521" y="0"/>
 </item>
-<item historyLabel="Main.java" index="5">
-<position info="not_deleted" x="663" y="0"/>
+<item historyLabel="HtmlWriter.java" index="1">
+<position info="not_deleted" x="299" y="0"/>
 </item>
-<item historyLabel="Main.java" index="2">
-<position info="not_deleted" x="653" y="0"/>
+<item historyLabel="PageMaker.java" index="2">
+<position info="not_deleted" x="858" y="0"/>
 </item>
-<item historyLabel="Main.java" index="5">
-<position info="not_deleted" x="6379" y="0"/>
+<item historyLabel="maildata.txt" index="5">
+<position info="not_deleted" x="119" y="0"/>
 </item>
-<item active="true" historyLabel="Main.java" index="2">
-<position info="not_deleted" x="653" y="0"/>
+<item historyLabel="PageMaker.java" index="2">
+<position info="not_deleted" x="858" y="0"/>
+</item>
+<item historyLabel="Main.java" index="4">
+<position info="not_deleted" x="291" y="0"/>
+</item>
+<item historyLabel="PageMaker.java" index="2">
+<position info="not_deleted" x="858" y="0"/>
+</item>
+<item active="true" historyLabel="Database.java" index="0">
+<position info="not_deleted" x="521" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -456,6 +450,30 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="maildata.txt" tooltip="designpattern/src/facade/maildata.txt">
+<persistable path="/designpattern/src/facade/maildata.txt"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Main.java" tooltip="designpattern/src/facade/Main.java">
+<persistable path="/designpattern/src/facade/Main.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Factory.java" tooltip="designpattern/src/factoryMethod/framework/Factory.java">
+<persistable path="/designpattern/src/factoryMethod/framework/Factory.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PageMaker.java" tooltip="designpattern/src/facade/pagemaker/PageMaker.java">
+<persistable path="/designpattern/src/facade/pagemaker/PageMaker.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="HtmlWriter.java" tooltip="designpattern/src/facade/pagemaker/HtmlWriter.java">
+<persistable path="/designpattern/src/facade/pagemaker/HtmlWriter.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="maildata.txt" tooltip="designpattern/src/facade/pagemaker/maildata.txt">
+<persistable path="/designpattern/src/facade/pagemaker/maildata.txt"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Database.java" tooltip="designpattern/src/facade/pagemaker/Database.java">
+<persistable path="/designpattern/src/facade/pagemaker/Database.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.systemExternalEditor" name="GoF_Design_Pattern.xlsx" tooltip="designpattern/system design/GoF_Design_Pattern.xlsx">
+<persistable path="/designpattern/system design/GoF_Design_Pattern.xlsx"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Main.java" tooltip="designpattern/src/command/Main.java">
 <persistable path="/designpattern/src/command/Main.java"/>
 </file>

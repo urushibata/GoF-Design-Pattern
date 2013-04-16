@@ -1,0 +1,22 @@
+package facade.pagemaker;
+
+import java.util.Properties;
+
+/**
+ * @author urushibata
+ * @version 1.0
+ */
+public class PageMaker{
+	/**
+	 * コンストラクタ
+	 * @since 1.0
+	 */
+	// インスタンスは作らないのでprivate宣言する。
+	private PageMaker(){}
+	public static void makeWelcomePage(String mailaddr, String filename){
+		try{
+			Properties mailprop = Database.getProperties("maildata");
+			String username = mialprop.getProperty(new FileWriter(filename));
+		}
+	}
+}

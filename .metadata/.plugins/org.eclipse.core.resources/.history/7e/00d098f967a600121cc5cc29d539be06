@@ -1,0 +1,10 @@
+package facade.pagemaker;
+
+public class Database {
+	private Database(){}
+	
+	public static Properties getProperties(String dbname){
+		String filename = dbname + ".txt";
+		Properties prop = new Properties();
+	}
+}

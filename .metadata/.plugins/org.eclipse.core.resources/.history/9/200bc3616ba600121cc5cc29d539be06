@@ -1,0 +1,9 @@
+package facade.pagemaker;
+
+public class PageMaker{
+	/**
+	 * @since 1.0
+	 */
+	private PageMaker(){
+	}
+}

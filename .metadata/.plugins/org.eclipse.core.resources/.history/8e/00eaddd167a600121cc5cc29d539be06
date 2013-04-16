@@ -1,0 +1,9 @@
+package facade.pagemaker;
+
+public class Database {
+	private Database(){}
+	
+	public static Properties getProperties(String dbname){
+		
+	}
+}

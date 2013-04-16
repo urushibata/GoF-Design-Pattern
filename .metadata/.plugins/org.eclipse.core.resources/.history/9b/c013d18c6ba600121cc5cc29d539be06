@@ -1,0 +1,14 @@
+package facade.pagemaker;
+
+/**
+ * @author urushibata
+ * @version 1.0
+ */
+public class PageMaker{
+	/**
+	 * コンストラクタ
+	 * @since 1.0
+	 */
+	// インスタンスは作らないのでprivate宣言する。
+	private PageMaker(){}
+}

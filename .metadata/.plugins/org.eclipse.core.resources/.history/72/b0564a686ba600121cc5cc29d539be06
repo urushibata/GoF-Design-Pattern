@@ -1,0 +1,13 @@
+package facade.pagemaker;
+
+/**
+ * @author urushibata
+ * @version 1.0
+ */
+public class PageMaker{
+	/**
+	 * @since 1.0
+	 */
+	private PageMaker(){
+	}
+}
