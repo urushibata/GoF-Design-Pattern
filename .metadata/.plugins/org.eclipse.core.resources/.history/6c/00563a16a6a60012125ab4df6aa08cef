@@ -1,0 +1,9 @@
+package command.command;
+
+/**
+ * 命令インターフェース
+ * @author urushibata
+ */
+public interface Command {
+	public abstract void execute();
+}

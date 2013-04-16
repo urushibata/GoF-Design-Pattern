@@ -4,36 +4,37 @@ import java.awt.Point;
 import command.command.Command;
 
 /**
+ * æ›¸ãã¨ã„ã†å‘½ä»¤ã‚¯ãƒ©ã‚¹<br />
+ * Interface Commandã®å®Ÿè£…ã‚¯ãƒ©ã‚¹
  * @author urushibata
- * ‘‚­‚Æ‚¢‚¤–½—ßƒNƒ‰ƒX
- * Interface Command‚ÌÀ‘•ƒNƒ‰ƒX
  */
 public class DrawCommand implements Command {
 
-	// •`‰æ‘ÎÛ
+	// æç”»å¯¾è±¡
 	protected Drawable drawable;
-	// •`‰æˆÊ’u
+	// æç”»ä½ç½®
 	private Point position;
 
 	/**
-	 * @param drawable DrawCanvasƒNƒ‰ƒX
-	 * @param position À•W
-	 * ƒRƒ“ƒXƒgƒ‰ƒNƒ^
+	 * ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿
+	 * @param drawable DrawCanvasã‚¯ãƒ©ã‚¹
+	 * @param position åº§æ¨™
 	 */
 	public DrawCommand(Drawable drawable, Point position) {
 		this.drawable = drawable;
 		this.position = position;
 
-		System.out.println("’Ç‰Áƒƒ“ƒo•Ï”:drawable:" + drawable + " position:" + position);
-		System.out.println("’Ç‰Áƒƒ“ƒo:" + this);
+		System.out.println("è¿½åŠ ãƒ¡ãƒ³ãƒå¤‰æ•°:drawable:" + drawable + " position:" + position);
+		System.out.println("è¿½åŠ ãƒ¡ãƒ³ãƒ:" + this);
 	}
 
 	/**
-	 * ƒƒ“ƒo•Ï”‚Ìdrawable<DrawCanvas>‚Ìdrawƒƒ\ƒbƒhÀs
+	 * ãƒ¡ãƒ³ãƒå¤‰æ•°ã®drawable<DrawCanvas>ã®drawãƒ¡ã‚½ãƒƒãƒ‰å®Ÿè¡Œ
+	 * @see command.command.Command#execute()
 	 */
 	@Override
 	public void execute() {
-		System.out.println("Às‚³‚ê‚éDrawCommand:" + Integer.toHexString(this.hashCode()));
+		System.out.println("å®Ÿè¡Œã•ã‚Œã‚‹DrawCommand:" + Integer.toHexString(this.hashCode()));
 		drawable.draw(position.x, position.y);
 	}
 }

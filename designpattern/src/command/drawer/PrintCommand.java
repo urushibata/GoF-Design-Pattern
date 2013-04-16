@@ -3,31 +3,35 @@ package command.drawer;
 import command.command.Command;
 
 /**
+ * å°åˆ·ã™ã‚‹ã¨ã„ã†å‘½ä»¤ã‚¯ãƒ©ã‚¹<br />
+ * Interface Commandã®å®Ÿè£…ã‚¯ãƒ©ã‚¹
  * @author urushibata
- * ˆóü‚·‚é‚Æ‚¢‚¤–½—ßƒNƒ‰ƒX
- * Interface Command‚ÌÀ‘•ƒNƒ‰ƒX
+ * @version 1.0
  */
 public class PrintCommand implements Command {
 
-	// •`‰æ‘ÎÛ
+	// æç”»å¯¾è±¡
 	protected Drawable drawable;
 
 	/**
-	 * @param drawable DrawCanvasƒNƒ‰ƒX
-	 * ƒRƒ“ƒXƒgƒ‰ƒNƒ^
+	 * ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿
+	 * @param drawable DrawCanvasã‚¯ãƒ©ã‚¹
+	 * @since 1.0
 	 */
 	public PrintCommand(Drawable drawable){
 		this.drawable = drawable;
 
-		System.out.println("ˆóü‘ÎÛƒIƒuƒWƒFƒNƒg:" + this);
+		System.out.println("å°åˆ·å¯¾è±¡ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ:" + this);
 	}
 
 	/**
-	 * ƒƒ“ƒo•Ï”‚Ìdrawable<DrawCanvas>‚Ìdrawƒƒ\ƒbƒhÀs
+	 * ãƒ¡ãƒ³ãƒå¤‰æ•°ã®drawable<DrawCanvas>ã®drawãƒ¡ã‚½ãƒƒãƒ‰å®Ÿè¡Œ
+	 * @see command.command.Command#execute()
+	 * @since 1.0
 	 */
 	@Override
 	public void execute(){
 		drawable.printOut();
-		System.out.println("Às‚³‚ê‚éprintOutCommand:" + Integer.toHexString(this.hashCode()));
+		System.out.println("å®Ÿè¡Œã•ã‚Œã‚‹printOutCommand:" + Integer.toHexString(this.hashCode()));
 	}
 }

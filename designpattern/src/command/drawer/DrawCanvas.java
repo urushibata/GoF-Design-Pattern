@@ -16,21 +16,27 @@ import javax.swing.filechooser.FileNameExtensionFilter;
 import command.command.MacroCommand;
 
 /**
+ * java.awt.Componentâ†’java.awt.Canvasã‚’ç¶™æ‰¿<br />
+ * InterFace Drawableã®å®Ÿè£…ã‚¯ãƒ©ã‚¹
  * @author urushibata
- * java.awt.Component¨java.awt.Canvas‚ğŒp³
- * InterFace Drawable‚ÌÀ‘•ƒNƒ‰ƒX
+ * @version 1.0
  */
 public class DrawCanvas extends Canvas implements Drawable {
 	private static final long serialVersionUID = 8912999038848526103L;
-	// •`‰æF
+	// æç”»è‰²
 	private Color color;
-	// •`‰æ‚·‚é“_‚Ì”¼Œa
+	// æç”»ã™ã‚‹ç‚¹ã®åŠå¾„
 	private int radius;
-	// MainƒNƒ‰ƒX‚©‚ç“n‚³‚êA‚±‚ÌƒNƒ‰ƒX‚Æ‹¤—L‚·‚éB
-	// —š—ğ
+	// Mainã‚¯ãƒ©ã‚¹ã‹ã‚‰æ¸¡ã•ã‚Œã€ã“ã®ã‚¯ãƒ©ã‚¹ã¨å…±æœ‰ã™ã‚‹ã€‚
+	// å±¥æ­´
 	private MacroCommand history;
 
-	// ƒRƒ“ƒXƒgƒ‰ƒNƒ^
+	/**
+	 * ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿
+	 * @param width
+	 * @param height
+	 * @param history
+	 */
 	public DrawCanvas(int width, int height, MacroCommand history) {
 		setSize(width, height);
 		setBackground(Color.white);
@@ -38,32 +44,41 @@ public class DrawCanvas extends Canvas implements Drawable {
 		init();
 	}
 
-	// —š—ğ‚ğ•`‰æ
-	// Canvas¨Component‚ÌpaintƒR[ƒ‹ƒoƒbƒNƒƒ\ƒbƒh
+	/**
+	 * å±¥æ­´ã‚’æç”»<br />
+	 * Canvasâ†’Componentã®paintã‚³ãƒ¼ãƒ«ãƒãƒƒã‚¯ãƒ¡ã‚½ãƒƒãƒ‰
+	 * @see java.awt.Canvas#paint(java.awt.Graphics)
+	 * @since 1.0
+	 */
 	@Override
 	public void paint(Graphics g){
-		System.out.println("paintƒƒ\ƒbƒh");
+		System.out.println("paintãƒ¡ã‚½ãƒƒãƒ‰");
 		history.execute();
 	}
 
-	/*
+	/**
 	 * @see command.drawer.Drawable#draw(int, int)
+	 * @since 1.0
 	 */
 	@Override
 	public void draw(int x, int y){
-		System.out.println("¡‚ÌFF" + this.color);
+		System.out.println("ä»Šã®è‰²ï¼š" + this.color);
 
-		// ComponentƒNƒ‰ƒX‚ÌgetGraphics‚ÅGraphicsƒNƒ‰ƒXì¬
+		// Componentã‚¯ãƒ©ã‚¹ã®getGraphicsã§Graphicsã‚¯ãƒ©ã‚¹ä½œæˆ
 		Graphics g = getGraphics();
 		g.setColor(this.color);
-		// “h‚è’×‚³‚ê‚½‰~‚ğ‘‚­B
-		// ‘æˆêˆø”	¶ã‚ÌXÀ•W
-		// ‘æ“ñˆø”	¶ã‚ÌYÀ•W
-		// ‘æOˆø”	width
-		// ‘ælˆø”	height
+		// å¡—ã‚Šæ½°ã•ã‚ŒãŸå††ã‚’æ›¸ãã€‚
+		// ç¬¬ä¸€å¼•æ•°	å·¦ä¸Šã®Xåº§æ¨™
+		// ç¬¬äºŒå¼•æ•°	å·¦ä¸Šã®Yåº§æ¨™
+		// ç¬¬ä¸‰å¼•æ•°	width
+		// ç¬¬å››å¼•æ•°	height
 		g.fillOval(x - this.radius, y - this.radius, this.radius * 2, this.radius * 2);
 	}
 
+	/**
+	 * @see command.drawer.Drawable#init()
+	 * @since 1.0
+	 */
 	@Override
 	public void init() {
 		this.color = Color.red;
@@ -71,25 +86,33 @@ public class DrawCanvas extends Canvas implements Drawable {
 		history.append(new ColorCommand(this, color));
 	}
 
+	/**
+	 * @see command.drawer.Drawable#setColor(java.awt.Color)
+	 * @since 1.0
+	 */
 	@Override
 	public void setColor(Color color){
-		System.out.println("FƒZƒbƒgII¨" + color);
+		System.out.println("è‰²ã‚»ãƒƒãƒˆï¼ï¼â†’" + color);
 		this.color = color;
 	}
 
+	/**
+	 * @see command.drawer.Drawable#printOut()
+	 * @since 1.0
+	 */
 	@Override
 	public void printOut(){
 		JFileChooser fc = new JFileChooser();
-		fc.setFileFilter(new FileNameExtensionFilter("‰æ‘œƒtƒ@ƒCƒ‹(*.png)", "png"));
-		// •¡”‘I‘ğ•s‰Â
+		fc.setFileFilter(new FileNameExtensionFilter("ç”»åƒãƒ•ã‚¡ã‚¤ãƒ«(*.png)", "png"));
+		// è¤‡æ•°é¸æŠä¸å¯
 		fc.setMultiSelectionEnabled(false);
-		// ƒtƒ@ƒCƒ‹‘I‘ğƒ_ƒCƒAƒƒO•\¦
+		// ãƒ•ã‚¡ã‚¤ãƒ«é¸æŠãƒ€ã‚¤ã‚¢ãƒ­ã‚°è¡¨ç¤º
 		int result = fc.showSaveDialog(this);
 
 		if(result == JFileChooser.APPROVE_OPTION){
 			File f = fc.getSelectedFile();
-			// TODO •Û‘¶‚Å‚«‚È‚¢II
-			System.out.println("•Û‘¶æ‘I‘ğŠ®—¹F" + f.toString());
+			// TODO ä¿å­˜ã§ããªã„ï¼ï¼
+			System.out.println("ä¿å­˜å…ˆé¸æŠå®Œäº†ï¼š" + f.toString());
 			try{
 				int w = this.getWidth();
 				int h = this.getHeight();
@@ -104,7 +127,7 @@ public class DrawCanvas extends Canvas implements Drawable {
 				e.printStackTrace();
 			}
 		}else if(result == JFileChooser.ERROR_OPTION){
-			System.out.println("ƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½B");
+			System.out.println("ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚");
 		}
 	}
 }

@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package singleton;
+
+/**
+ * @author urush_000
+ *
+ */
+public class Singleton {
+
+}

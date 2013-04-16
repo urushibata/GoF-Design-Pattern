@@ -50,4 +50,5 @@
 <fullyQualifiedTypeName name="java.util.Properties"/>
 <fullyQualifiedTypeName name="java.io.FileInputStream"/>
 <fullyQualifiedTypeName name="facade.pagemaker.PageMaker"/>
+<fullyQualifiedTypeName name="singleton.Singleton"/>
 </qualifiedTypeNameHistroy>

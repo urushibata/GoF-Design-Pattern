@@ -3,8 +3,9 @@ package command.drawer;
 import java.awt.Color;
 
 /**
+ * 繧､繝吶Φ繝医Ο繧ｸ繝�繧ｯ繧､繝ｳ繧ｿ繝ｼ繝輔ぉ繝ｼ繧ｹ
  * @author urushbata
- * イベントロジックインターフェース
+ * @version 1.0
  */
 public interface Drawable {
 	public abstract void init();

@@ -50,6 +50,7 @@ public class Main extends JFrame implements ActionListener{
 
 	/**
 	 * @param title ウィンドウのタイトル
+	 * @since 1.0
 	 */
 	public Main(String title) {
 		// スーパクラスのコンストラクタ
@@ -66,8 +67,7 @@ public class Main extends JFrame implements ActionListener{
 			 * インターフェースを実装する場合は、必要ないメソッドも空で実装しなければいけないが、MouseMotionAdapterクラス
 			 * はMouseMotionListenerのメソッドが空で実装されたクラスの為、必要なメソッドのみ実装すればよくなる。
 			 * @since 1.0
-			 * @see
-			 * java.awt.event.ActionListener#mouseDragged(java.awt.event.ActionEvent
+			 * @see java.awt.event.ActionListener#mouseDragged(java.awt.event.ActionEvent
 			 */
 			@Override
 			public void mouseDragged(MouseEvent e) {
@@ -148,8 +148,7 @@ public class Main extends JFrame implements ActionListener{
 	/**
 	 * addActionListenerされたコンポーネントを監視しイベントが発生したら処理をする。
 	 * @since 1.0
-	 * @see
-	 * java.awt.event.ActionListener#actionPerformed(java.awt.event.ActionEvent)
+	 * @see java.awt.event.ActionListener#actionPerformed(java.awt.event.ActionEvent)
 	 */
 	@Override
 	public void actionPerformed(ActionEvent e){
