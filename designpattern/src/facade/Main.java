@@ -3,6 +3,7 @@ package facade;
 import facade.pagemaker.PageMaker;
 
 /**
+ * Facadeパターンメインクラス
  * @author urushibata
  * @version 1.0
  */

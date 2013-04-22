@@ -1,0 +1,30 @@
+package singleton;
+
+/**
+ * @author urushibata
+ * @version 1.0
+ */
+public final class Singleton {
+	/**
+	 * クラス変数singleton
+	 */
+	private static final Singleton singleton = new Singleton();
+	
+	private int i;
+	/**
+	 * コンストラクタ<br />
+	 * privateで宣言されているため、このクラス以外からはインスタンスを作成することができない。
+	 */
+	private Singleton(){
+		System.out.println("インスタンスを作成しました。");
+	}
+
+	/**
+	 * Singletonインスタンスを作成するstaticメソッド。
+	 * @return singleton
+	 * @since 1.0
+	 */
+	public static Singleton getInstance(){
+		return singleton;
+	}
+}

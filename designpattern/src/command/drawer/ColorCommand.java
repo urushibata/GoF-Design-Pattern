@@ -8,7 +8,7 @@ import command.command.Command;
  * 線の色を変更するという命令クラス<br />
  * Interface Commandの実装クラス
  * @author urushbata
- * @version1.0
+ * @version 1.0
  */
 public class ColorCommand implements Command {
 
@@ -38,7 +38,7 @@ public class ColorCommand implements Command {
 	/**
 	 * メンバ変数のdrawable<DrawCanvas>のdrawメソッド実行
 	 * @see command.command.Command#execute()
-	 * @since1.0
+	 * @since 1.0
 	 */
 	@Override
 	public void execute() {
