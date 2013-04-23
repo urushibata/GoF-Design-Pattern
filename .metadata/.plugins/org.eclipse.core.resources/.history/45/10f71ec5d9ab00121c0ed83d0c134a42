@@ -1,0 +1,33 @@
+package iterator;
+
+import java.util.ArrayList;
+
+/**
+ * @author urushibata
+ * @version 1.0
+ */
+public class BookShelf implements Aggregate {
+
+	private ArrayList<Book> books;
+	private int last = 0;
+	
+	/**
+	 * @param index
+	 * @return Books[index]
+	 */
+	public Book getBookAt(int index){
+		return books.get(index);
+	}
+	
+	public void appendBook(Book book){
+		
+	}
+	/**
+	 * @see iterator.Aggregate#iterator()
+	 */
+	@Override
+	public Iterator iterator() {
+		return new BookShelfIterator(this);
+	}
+
+}

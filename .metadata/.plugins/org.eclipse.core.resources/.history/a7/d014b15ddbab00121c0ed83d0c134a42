@@ -1,0 +1,27 @@
+package iterator;
+
+/**
+ * @author urushibata
+ *
+ */
+public class BookShelfIterator implements Iterator {
+
+	/* (非 Javadoc)
+	 * @see iterator.Iterator#hasNext()
+	 */
+	@Override
+	public boolean hasNext() {
+		// TODO 自動生成されたメソッド・スタブ
+		return false;
+	}
+
+	/* (非 Javadoc)
+	 * @see iterator.Iterator#next()
+	 */
+	@Override
+	public Object next() {
+		// TODO 自動生成されたメソッド・スタブ
+		return null;
+	}
+
+}

@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.util.Properties;
 
 /**
+ * Facadeクラス
  * @author urushibata
  * @version 1.0
  */

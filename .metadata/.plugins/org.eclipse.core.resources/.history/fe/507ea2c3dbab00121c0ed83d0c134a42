@@ -1,0 +1,37 @@
+package iterator;
+
+/**
+ * @author urushibata
+ * @version 1.0
+ */
+public class BookShelfIterator implements Iterator {
+
+	private BookShelf bookShelf;
+	private int index;
+
+	public BookShelfIterator(BookShelf bookShelf){
+		this.bookShelf = bookShelf;
+		this.index = 0;
+	}
+
+	/**
+	 * @see iterator.Iterator#hasNext()
+	 */
+	@Override
+	public boolean hasNext() {
+		if(index < bookShelf.getLength()){
+			return true;
+		}else{
+			return false;
+	}
+
+	/**
+	 * @see iterator.Iterator#next()
+	 */
+	@Override
+	public Object next() {
+		// TODO 自動生成されたメソッド・スタブ
+		return null;
+	}
+
+}

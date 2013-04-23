@@ -1,0 +1,31 @@
+package iterator;
+
+/**
+ * Iteratorパターンメインクラス
+ * @author urushibata
+ * @version 1.0
+ */
+public class Main {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args){
+		System.out.println("Start iterator!!");
+
+		BookShelf bookShelf = new BookShelf();
+		bookShelf.appendBook(new Book("Around the World in 80 days"));
+		bookShelf.appendBook(new Book("Bible"));
+		bookShelf.appendBook(new Book("Cinderella"));
+		bookShelf.appendBook(new Book("Daddy-Long-Legs"));
+
+		System.out.println("BookShelfSize:" + bookShelf.getLength());
+		Iterator it = bookShelf.iterator();
+		while(it.hasNext()){
+			Book book = (Book)it.next();
+			System.out.println(book.getName());
+		}
+
+		System.out.println("End iterator!!");
+	}
+}

@@ -1,0 +1,10 @@
+package iterator;
+
+/**
+ * @author urushibata
+ * @version 1.0
+ */
+public interface Iterator {
+	public abstract boolean hasNext();
+	public abstract Object next();
+}

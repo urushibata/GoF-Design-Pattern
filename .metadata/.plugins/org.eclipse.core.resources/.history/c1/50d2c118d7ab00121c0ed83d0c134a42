@@ -1,0 +1,21 @@
+/**
+ * 
+ */
+package iterator;
+
+/**
+ * @author urushibata
+ *
+ */
+public class BookShelf implements Aggregate {
+
+	/* (非 Javadoc)
+	 * @see iterator.Aggregate#iterator()
+	 */
+	@Override
+	public Iterator iterator() {
+		// TODO 自動生成されたメソッド・スタブ
+		return null;
+	}
+
+}

@@ -33,12 +33,10 @@
 <fullyQualifiedTypeName name="javax.swing.JFileChooser"/>
 <fullyQualifiedTypeName name="javax.imageio.ImageIO"/>
 <fullyQualifiedTypeName name="com.sun.java.util.jar.pack.Package.File"/>
-<fullyQualifiedTypeName name="java.io.File"/>
 <fullyQualifiedTypeName name="java.io.FileOutputStream"/>
 <fullyQualifiedTypeName name="java.io.OutputStream"/>
 <fullyQualifiedTypeName name="java.awt.image.BufferedImage"/>
 <fullyQualifiedTypeName name="java.awt.Graphics2D"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="factoryMethod.idcard.IDCard"/>
 <fullyQualifiedTypeName name="factoryMethod.framework.Factory"/>
@@ -51,4 +49,10 @@
 <fullyQualifiedTypeName name="java.io.FileInputStream"/>
 <fullyQualifiedTypeName name="facade.pagemaker.PageMaker"/>
 <fullyQualifiedTypeName name="singleton.Singleton"/>
+<fullyQualifiedTypeName name="java.io.InputStreamReader"/>
+<fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="iterator.Iterator"/>
+<fullyQualifiedTypeName name="iterator.BookShelfIterator"/>
+<fullyQualifiedTypeName name="iterator.BookShelf"/>
 </qualifiedTypeNameHistroy>

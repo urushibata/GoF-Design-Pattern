@@ -1,0 +1,30 @@
+package facade.pagemaker;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.Properties;
+
+/**
+ * @author urushibata
+ * @version 1.0
+ */
+public class Database{
+	private Database(){}
+
+	/**
+	 * @param dbname
+	 * @return Properties
+	 * @since 1.0
+	 */
+	public static Properties getProperties(String dbname){
+		String filename = "/" + dbname + ".properties";
+		Properties prop = new Properties();
+		try{
+			prop.load(new InputStreamReader(new FileInputStream(filename), "UTF-8"));
+		}catch(IOException e){
+			System.out.println("Warning: " + filename + " is not found.");
+		}
+		return prop;
+	}
+}

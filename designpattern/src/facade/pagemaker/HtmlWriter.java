@@ -25,6 +25,7 @@ public class HtmlWriter{
 	 */
 	public void title(String title) throws IOException{
 		writer.write("<html>");
+		writer.write("<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">");
 		writer.write("<head>");
 		writer.write("<title>" + title + "</title>");
 		writer.write("</head>");

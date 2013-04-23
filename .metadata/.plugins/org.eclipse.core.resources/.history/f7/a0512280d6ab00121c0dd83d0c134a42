@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package iterator;
+
+/**
+ * @author urushibata
+ *
+ */
+public interface Aggregate {
+
+}

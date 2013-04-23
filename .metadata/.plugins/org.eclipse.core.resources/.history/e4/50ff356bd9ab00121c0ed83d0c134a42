@@ -1,0 +1,18 @@
+package iterator;
+
+/**
+ * @author urushibata
+ * @version 1.0
+ */
+public class BookShelf implements Aggregate {
+
+	private ArrayList<Book> books;
+	/**
+	 * @see iterator.Aggregate#iterator()
+	 */
+	@Override
+	public Iterator iterator() {
+		return new BookShelfIterator(this);
+	}
+
+}

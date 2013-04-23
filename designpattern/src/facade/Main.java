@@ -3,7 +3,8 @@ package facade;
 import facade.pagemaker.PageMaker;
 
 /**
- * Facadeパターンメインクラス
+ * Facadeパターンメインクラス<br />
+ * HTMLファイル自動生成
  * @author urushibata
  * @version 1.0
  */

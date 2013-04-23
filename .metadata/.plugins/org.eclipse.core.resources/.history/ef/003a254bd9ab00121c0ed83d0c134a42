@@ -1,0 +1,17 @@
+package iterator;
+
+/**
+ * @author urushibata
+ * @version 1.0
+ */
+public class BookShelf implements Aggregate {
+
+	/**
+	 * @see iterator.Aggregate#iterator()
+	 */
+	@Override
+	public Iterator iterator() {
+		return null;
+	}
+
+}
