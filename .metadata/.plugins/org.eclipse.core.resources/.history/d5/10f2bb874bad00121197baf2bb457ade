@@ -1,0 +1,9 @@
+package adapter.inheritance;
+
+/**
+ * @author urushibata
+ *
+ */
+public class PrintBanner {
+
+}

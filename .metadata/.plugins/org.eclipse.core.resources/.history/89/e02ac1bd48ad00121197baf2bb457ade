@@ -1,0 +1,35 @@
+package iterator;
+
+/**
+ * @author urushibata
+ * @version 1.0
+ */
+public interface Iterator {
+	/**
+	 * 一つ先の配列が存在するかチェックする。<br />
+	 * ある場合、インデックスを一つ進める。
+	 */
+	public abstract boolean hasNext();
+	/**
+	 * 配列のインデックスを一つ進める。
+	 */
+	public abstract Object next();
+	/**
+	 * 一つ前の配列が存在するかチェックする。<br />
+	 * ある場合、インデックスを一つ戻す。
+	 */
+	public abstract boolean hasPrevious();
+	/**
+	 * 配列のインデックスを一つ戻す。
+	 */
+	public abstract Object previous();
+	/**
+	 * 配列の先頭へ移動する。
+	 */
+	public abstract void goHead();
+	/**
+	 * 配列の最後尾へ移動する。
+	 * @since 1.0
+	 */
+	public abstract void goTail();
+}

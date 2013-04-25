@@ -12,6 +12,7 @@ public class BookShelf implements Aggregate {
 
 	/**
 	 * コンストラクタ
+	 * @since 1.0
 	 */
 	public BookShelf(){
 		this.books = new ArrayList<Book>();
@@ -20,6 +21,7 @@ public class BookShelf implements Aggregate {
 	/**
 	 * @param index
 	 * @return Books[index]
+	 * @since 1.0
 	 */
 	public Book getBookAt(int index){
 		return books.get(index);
@@ -27,13 +29,15 @@ public class BookShelf implements Aggregate {
 
 	/**
 	 * @param book
+	 * @since 1.0
 	 */
 	public void appendBook(Book book){
 		this.books.add(book);
 	}
 
 	/**
-	 * @return
+	 * @return int
+	 * @since 1.0
 	 */
 	public int getLength(){
 		return this.books.size();
@@ -42,6 +46,7 @@ public class BookShelf implements Aggregate {
 	/**
 	 * BookShelfIteratorに変換し、返却する。
 	 * @see iterator.Aggregate#iterator()
+	 * @since 1.0
 	 */
 	@Override
 	public Iterator iterator(){

@@ -2,7 +2,7 @@ package iterator;
 
 /**
  * Iteratorパターンメインクラス<br />
- * 書庫
+ * 本棚
  * @author urushibata
  * @version 1.0
  */
@@ -14,7 +14,7 @@ public class Main {
 	public static void main(String[] args){
 		System.out.println("*** Start iterator!! ***");
 
-		// 書庫作成
+		// 本棚作成
 		BookShelf bookShelf = new BookShelf();
 		// 本を登録
 		bookShelf.appendBook(new Book("Around the World in 80 days"));
@@ -22,9 +22,11 @@ public class Main {
 		bookShelf.appendBook(new Book("Cinderella"));
 		bookShelf.appendBook(new Book("Daddy-Long-Legs"));
 
-		// 書庫のサイズ
-		System.out.println("書庫にある本の数 : " + bookShelf.getLength());
+		// 本棚のサイズ
+		System.out.println("本棚にある本の数 : " + bookShelf.getLength());
 		System.out.println("先頭から順番に表示する。");
+		// Iteratorインターフェース参照型に代入することで、BookShelf具象クラスとの
+		// 依存性から切り離す。
 		Iterator it = bookShelf.iterator();
 		while(it.hasNext()){
 			Book book = (Book)it.next();

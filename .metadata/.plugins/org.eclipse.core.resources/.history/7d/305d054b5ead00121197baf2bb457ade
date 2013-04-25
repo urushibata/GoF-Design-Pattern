@@ -1,0 +1,24 @@
+package adapter;
+
+import adapter.transfer.Print;
+import adapter.transfer.PrintBanner;
+import adapter.inheritance.Print;
+import adapter.inheritance.PrintBanner;
+
+/**
+ * Adapterパターン（継承）メインクラス
+ * @author urushibata
+ * @version 1.0
+ */
+public class Main {
+
+	/**
+	 * @param args
+	 * @since 1.0
+	 */
+	public static void main(String[] args) {
+		Print p = new transfer.PrintBanner("Hello");
+		p.printWeak();
+		p.printString();
+	}
+}

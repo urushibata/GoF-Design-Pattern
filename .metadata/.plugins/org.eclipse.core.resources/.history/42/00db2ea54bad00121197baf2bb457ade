@@ -1,0 +1,11 @@
+package adapter.inheritance;
+
+/**
+ * @author urushibata
+ * @version 1.0
+ */
+public class PrintBanner {
+	public PrintBanner(String string){
+		
+	}
+}

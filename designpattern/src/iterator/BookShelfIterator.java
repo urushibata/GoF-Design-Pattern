@@ -12,6 +12,7 @@ public class BookShelfIterator implements Iterator{
 
 	/**
 	 * @param bookShelf
+	 * @since 1.0
 	 */
 	public BookShelfIterator(BookShelf bookShelf){
 		this.bookShelf = bookShelf;
@@ -20,6 +21,7 @@ public class BookShelfIterator implements Iterator{
 
 	/**
 	 * @see iterator.Iterator#hasNext()
+	 * @since 1.0
 	 */
 	@Override
 	public boolean hasNext(){
@@ -32,6 +34,7 @@ public class BookShelfIterator implements Iterator{
 
 	/**
 	 * @see iterator.Iterator#next()
+	 * @since 1.0
 	 */
 	@Override
 	public Object next(){
@@ -42,6 +45,7 @@ public class BookShelfIterator implements Iterator{
 
 	/**
 	 * @see iterator.Iterator#hasPrevious()
+	 * @since 1.0
 	 */
 	@Override
 	public boolean hasPrevious(){
@@ -54,6 +58,7 @@ public class BookShelfIterator implements Iterator{
 
 	/**
 	 * @see iterator.Iterator#previous()
+	 * @since 1.0
 	 */
 	@Override
 	public Object previous(){
@@ -64,6 +69,7 @@ public class BookShelfIterator implements Iterator{
 
 	/**
 	 * @see iterator.Iterator#goHead()
+	 * @since 1.0
 	 */
 	@Override
 	public void goHead() {
@@ -72,6 +78,7 @@ public class BookShelfIterator implements Iterator{
 
 	/**
 	 * @see iterator.Iterator#goTail()
+	 * @since 1.0
 	 */
 	@Override
 	public void goTail() {

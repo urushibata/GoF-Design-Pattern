@@ -1,0 +1,19 @@
+package adapter.inheritance;
+
+/**
+ * Adapterパターンメインクラス<br />
+ * 本棚
+ * @author urushibata
+ *
+ */
+public class Main {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		Print p = new PrintBanner("Hello");
+		p.printWeak();
+		p.printString();
+	}
+}

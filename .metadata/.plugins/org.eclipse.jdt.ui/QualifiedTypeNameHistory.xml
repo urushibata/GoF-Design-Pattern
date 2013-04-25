@@ -55,4 +55,6 @@
 <fullyQualifiedTypeName name="iterator.Iterator"/>
 <fullyQualifiedTypeName name="iterator.BookShelfIterator"/>
 <fullyQualifiedTypeName name="iterator.BookShelf"/>
+<fullyQualifiedTypeName name="adapter.inheritance.PrintBanner"/>
+<fullyQualifiedTypeName name="adapter.Banner"/>
 </qualifiedTypeNameHistroy>

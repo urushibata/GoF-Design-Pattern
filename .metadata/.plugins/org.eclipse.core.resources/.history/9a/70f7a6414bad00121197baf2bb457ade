@@ -1,0 +1,30 @@
+package adapter.inheritance;
+
+/**
+ * @author urushibata
+ * @version 1.0
+ *
+ */
+public class Banner {
+	private String string;
+
+	/**
+	 * @param string
+	 */
+	public Banner(String string){
+		this.string = string;
+	}
+
+	/**
+	 * 括弧で文字列を囲む。
+	 */
+	public void showWithParen(){
+		System.out.println("(" + string + ")");
+	}
+	/**
+	 * "*"で文字列を囲む。
+	 */
+	public void showWithAster(){
+		System.out.println("*" + string + ")");
+	}
+}

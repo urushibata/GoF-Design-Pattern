@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package adapter.inheritance;
+
+/**
+ * @author urushibata
+ * @version 1.0
+ */
+public interface Print {
+
+}

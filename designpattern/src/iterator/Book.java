@@ -8,6 +8,7 @@ public class Book{
 	private String name;
 
 	/**
+	 * コンストラクタ
 	 * @param name
 	 */
 	public Book(String name){
@@ -15,7 +16,7 @@ public class Book{
 	}
 
 	/**
-	 * @return
+	 * @return name
 	 */
 	public String getName(){
 		return name;
