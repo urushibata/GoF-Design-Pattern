@@ -1,5 +1,5 @@
 #write output file by urushibata
-#Thu Apr 25 14:47:17 JST 2013
+#Thu Apr 25 15:20:26 JST 2013
 day=25
 year=2013
 month=4

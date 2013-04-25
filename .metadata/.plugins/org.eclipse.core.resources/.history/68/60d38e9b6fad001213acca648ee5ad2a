@@ -6,18 +6,12 @@ import java.io.IOException;
 import java.util.Properties;
 
 /**
- * 練習問題２－２<br />
- * 委譲パターン
  * @author urushibata
  * @version 1.0
  */
 public class FileProperties implements FileIO{
 
 	private Properties prop;
-
-	public FileProperties(){
-		this.prop = new Properties();
-	}
 
 	@Override
 	public void readFromFile(String filename) throws IOException {

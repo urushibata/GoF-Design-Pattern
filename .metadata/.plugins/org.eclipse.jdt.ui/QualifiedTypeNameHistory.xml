@@ -33,7 +33,6 @@
 <fullyQualifiedTypeName name="javax.swing.JFileChooser"/>
 <fullyQualifiedTypeName name="javax.imageio.ImageIO"/>
 <fullyQualifiedTypeName name="com.sun.java.util.jar.pack.Package.File"/>
-<fullyQualifiedTypeName name="java.io.FileOutputStream"/>
 <fullyQualifiedTypeName name="java.io.OutputStream"/>
 <fullyQualifiedTypeName name="java.awt.image.BufferedImage"/>
 <fullyQualifiedTypeName name="java.awt.Graphics2D"/>
@@ -44,9 +43,6 @@
 <fullyQualifiedTypeName name="factoryMethod.framework.Product"/>
 <fullyQualifiedTypeName name="java.io.Writer"/>
 <fullyQualifiedTypeName name="java.io.FileWriter"/>
-<fullyQualifiedTypeName name="java.io.IOException"/>
-<fullyQualifiedTypeName name="java.util.Properties"/>
-<fullyQualifiedTypeName name="java.io.FileInputStream"/>
 <fullyQualifiedTypeName name="facade.pagemaker.PageMaker"/>
 <fullyQualifiedTypeName name="singleton.Singleton"/>
 <fullyQualifiedTypeName name="java.io.InputStreamReader"/>
@@ -57,4 +53,11 @@
 <fullyQualifiedTypeName name="iterator.BookShelf"/>
 <fullyQualifiedTypeName name="adapter.inheritance.PrintBanner"/>
 <fullyQualifiedTypeName name="adapter.Banner"/>
+<fullyQualifiedTypeName name="java.io.IOException"/>
+<fullyQualifiedTypeName name="com.sun.imageio.plugins.common.InputStreamAdapter"/>
+<fullyQualifiedTypeName name="adapter.Q2_2.FileProperties"/>
+<fullyQualifiedTypeName name="java.io.FileInputStream"/>
+<fullyQualifiedTypeName name="java.io.InputStream"/>
+<fullyQualifiedTypeName name="java.io.FileOutputStream"/>
+<fullyQualifiedTypeName name="java.util.Properties"/>
 </qualifiedTypeNameHistroy>

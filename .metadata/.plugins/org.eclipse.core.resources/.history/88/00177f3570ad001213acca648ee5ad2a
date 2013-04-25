@@ -18,7 +18,6 @@ public class FileProperties implements FileIO{
 	public FileProperties(){
 		this.prop = new Properties();
 	}
-
 	@Override
 	public void readFromFile(String filename) throws IOException {
 		this.prop.load(new FileInputStream(filename));

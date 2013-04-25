@@ -6,18 +6,13 @@ import java.io.IOException;
 import java.util.Properties;
 
 /**
- * 練習問題２－２<br />
- * 委譲パターン
  * @author urushibata
  * @version 1.0
  */
+//public class FileProperties extends Properties implements FileIO{
 public class FileProperties implements FileIO{
 
 	private Properties prop;
-
-	public FileProperties(){
-		this.prop = new Properties();
-	}
 
 	@Override
 	public void readFromFile(String filename) throws IOException {
@@ -26,16 +21,16 @@ public class FileProperties implements FileIO{
 
 	@Override
 	public void writeToFile(String filename) throws IOException {
-		this.prop.store(new FileOutputStream(filename),"write output file by urushibata");
+		store(new FileOutputStream(filename),"write output file by urushibata");
 	}
 
 	@Override
 	public void setValue(String key, String value) {
-		this.prop.setProperty(key, value);
+		setProperty(key, value);
 	}
 
 	@Override
 	public String getValue(String key) {
-		return this.prop.getProperty(key, "");
+		return getProperty(key, "");
 	}
 }

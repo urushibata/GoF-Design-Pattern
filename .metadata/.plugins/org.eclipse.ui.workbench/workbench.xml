@@ -29,7 +29,7 @@
 <coolItem id="org.eclipse.wst.html.core.htmlsource.source" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.ui.browser.editor" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
@@ -38,26 +38,10 @@
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-<part id="1"/>
-<part id="2"/>
-</presentation>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Print.java" partName="Print.java" path="D:/usr/work/java-project/project-002/designpattern/src/adapter/transfer/Print.java" title="Print.java" tooltip="designpattern/src/adapter/transfer/Print.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/designpattern/src/adapter/transfer/Print.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="184" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PrintBanner.java" partName="PrintBanner.java" path="D:/usr/work/java-project/project-002/designpattern/src/adapter/transfer/PrintBanner.java" title="PrintBanner.java" tooltip="designpattern/src/adapter/transfer/PrintBanner.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/designpattern/src/adapter/transfer/PrintBanner.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="536" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Main.java" partName="Main.java" path="D:/usr/work/java-project/project-002/designpattern/src/adapter/Main.java" title="Main.java" tooltip="designpattern/src/adapter/Main.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/designpattern/src/adapter/Main.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="15" selectionTopPixel="0"/>
-</editor>
 </editors>
 <views>
 <view id="org.eclipse.jdt.callhierarchy.view" partName="呼び出し階層">
@@ -121,7 +105,7 @@
 <viewState/>
 </view>
 </views>
-<perspectives activePart="org.eclipse.jdt.ui.CompilationUnitEditor" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
+<perspectives activePart="org.eclipse.jdt.ui.PackageExplorer" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.jdt.internal.ui.JavaPerspectiveFactory" id="org.eclipse.jdt.ui.JavaPerspective" label="Java"/>
 <alwaysOnActionSet id="org.eclipse.mylyn.context.ui.actionSet"/>
@@ -253,172 +237,7 @@
 </perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory>
-<editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/designpattern/src/iterator/BookShelfIterator.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/designpattern/src/iterator/BookShelf.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/designpattern/src/adapter/inheritance/Banner.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/designpattern/src/adapter/inheritance/Print.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/designpattern/src/adapter/inheritance/PrintBanner.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/designpattern/src/adapter/inheritance/Main.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/designpattern/src/iterator/Main.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/designpattern/src/adapter/transfer/Print.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/designpattern/src/adapter/transfer/PrintBanner.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/designpattern/src/adapter/transfer/Main.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/designpattern/src/adapter/transfer/Banner.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/designpattern/src/adapter/Main.java"/>
-</editors>
-<item historyLabel="BookShelf.java" index="1">
-<position info="not_deleted" x="541" y="0"/>
-</item>
-<item historyLabel="BookShelfIterator.java" index="0">
-<position info="not_deleted" x="1400" y="0"/>
-</item>
-<item historyLabel="BookShelf.java" index="1">
-<position info="not_deleted" x="290" y="0"/>
-</item>
-<item historyLabel="Banner.java" index="2">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="Banner.java" index="2">
-<position info="not_deleted" x="349" y="0"/>
-</item>
-<item historyLabel="Banner.java" index="2">
-<position info="not_deleted" x="376" y="0"/>
-</item>
-<item historyLabel="Banner.java" index="2">
-<position info="not_deleted" x="501" y="0"/>
-</item>
-<item historyLabel="Print.java" index="3">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="Print.java" index="3">
-<position info="not_deleted" x="176" y="0"/>
-</item>
-<item historyLabel="PrintBanner.java" index="4">
-<position info="not_deleted" x="475" y="0"/>
-</item>
-<item historyLabel="Main.java" index="5">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="Print.java" index="3">
-<position info="not_deleted" x="176" y="0"/>
-</item>
-<item historyLabel="Banner.java" index="2">
-<position info="not_deleted" x="515" y="0"/>
-</item>
-<item historyLabel="Main.java" index="5">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="PrintBanner.java" index="4">
-<position info="not_deleted" x="475" y="0"/>
-</item>
-<item historyLabel="Print.java" index="3">
-<position info="not_deleted" x="176" y="0"/>
-</item>
-<item historyLabel="Banner.java" index="2">
-<position info="not_deleted" x="515" y="0"/>
-</item>
-<item historyLabel="PrintBanner.java" index="4">
-<position info="not_deleted" x="475" y="0"/>
-</item>
-<item historyLabel="Main.java" index="5">
-<position/>
-</item>
-<item historyLabel="Main.java" index="6">
-<position info="not_deleted" x="52" y="0"/>
-</item>
-<item historyLabel="Main.java" index="5">
-<position info="not_deleted" x="167" y="0"/>
-</item>
-<item historyLabel="PrintBanner.java" index="4">
-<position info="not_deleted" x="475" y="0"/>
-</item>
-<item historyLabel="Print.java" index="3">
-<position info="not_deleted" x="176" y="0"/>
-</item>
-<item historyLabel="Banner.java" index="2">
-<position info="not_deleted" x="525" y="0"/>
-</item>
-<item historyLabel="Main.java" index="5">
-<position info="not_deleted" x="167" y="0"/>
-</item>
-<item historyLabel="Banner.java" index="2">
-<position info="not_deleted" x="525" y="0"/>
-</item>
-<item historyLabel="PrintBanner.java" index="4">
-<position info="not_deleted" x="475" y="0"/>
-</item>
-<item historyLabel="Main.java" index="5">
-<position info="not_deleted" x="167" y="0"/>
-</item>
-<item historyLabel="PrintBanner.java" index="4">
-<position info="not_deleted" x="475" y="0"/>
-</item>
-<item historyLabel="Print.java" index="3">
-<position info="not_deleted" x="176" y="0"/>
-</item>
-<item historyLabel="PrintBanner.java" index="4">
-<position info="not_deleted" x="475" y="0"/>
-</item>
-<item historyLabel="Banner.java" index="2">
-<position info="not_deleted" x="57" y="0"/>
-</item>
-<item historyLabel="Print.java" index="7">
-<position info="not_deleted" x="183" y="0"/>
-</item>
-<item historyLabel="PrintBanner.java" index="8">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="PrintBanner.java" index="8">
-<position info="not_deleted" x="257" y="0"/>
-</item>
-<item historyLabel="PrintBanner.java" index="8">
-<position info="not_deleted" x="24" y="0"/>
-</item>
-<item historyLabel="Print.java" index="7">
-<position info="not_deleted" x="184" y="0"/>
-</item>
-<item historyLabel="Main.java" index="9">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="Banner.java" index="10">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="Main.java" index="9">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="Print.java" index="7">
-<position info="not_deleted" x="184" y="0"/>
-</item>
-<item historyLabel="Main.java" index="11">
-<position/>
-</item>
-<item historyLabel="PrintBanner.java" index="8">
-<position info="not_deleted" x="536" y="0"/>
-</item>
-<item historyLabel="Main.java" index="11">
-<position/>
-</item>
-<item historyLabel="Main.java" index="11">
-<position info="not_deleted" x="15" y="0"/>
-</item>
-<item historyLabel="PrintBanner.java" index="8">
-<position info="not_deleted" x="536" y="0"/>
-</item>
-<item historyLabel="Print.java" index="7">
-<position info="not_deleted" x="184" y="0"/>
-</item>
-<item historyLabel="Main.java" index="11">
-<position info="not_deleted" x="15" y="0"/>
-</item>
-<item historyLabel="PrintBanner.java" index="8">
-<position info="not_deleted" x="536" y="0"/>
-</item>
-<item active="true" historyLabel="Print.java" index="7">
-<position info="not_deleted" x="184" y="0"/>
-</item>
-</navigationHistory>
+<navigationHistory/>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
@@ -439,17 +258,35 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Banner.java" tooltip="designpattern/src/adapter/transfer/Banner.java">
-<persistable path="/designpattern/src/adapter/transfer/Banner.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="C:\Program Files\Microsoft Office\Office12\EXCEL.EXE" name="GoF_Design_Pattern.xls" tooltip="designpattern/system design/GoF_Design_Pattern.xls">
+<persistable path="/designpattern/system design/GoF_Design_Pattern.xls"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Main.java" tooltip="designpattern/src/adapter/transfer/Main.java">
-<persistable path="/designpattern/src/adapter/transfer/Main.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="adapterQ2_2.output.txt" tooltip="designpattern/resource/adapterQ2_2.output.txt">
+<persistable path="/designpattern/resource/adapterQ2_2.output.txt"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PrintBanner.java" tooltip="designpattern/src/adapter/transfer/PrintBanner.java">
 <persistable path="/designpattern/src/adapter/transfer/PrintBanner.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Print.java" tooltip="designpattern/src/adapter/transfer/Print.java">
 <persistable path="/designpattern/src/adapter/transfer/Print.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FileProperties.java" tooltip="designpattern/src/adapter/Q2_2/FileProperties.java">
+<persistable path="/designpattern/src/adapter/Q2_2/FileProperties.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="adapterQ2_2.txt" tooltip="designpattern/resource/adapterQ2_2.txt">
+<persistable path="/designpattern/resource/adapterQ2_2.txt"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FileIO.java" tooltip="designpattern/src/adapter/Q2_2/FileIO.java">
+<persistable path="/designpattern/src/adapter/Q2_2/FileIO.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Main.java" tooltip="designpattern/src/adapter/Q2_2/Main.java">
+<persistable path="/designpattern/src/adapter/Q2_2/Main.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Banner.java" tooltip="designpattern/src/adapter/transfer/Banner.java">
+<persistable path="/designpattern/src/adapter/transfer/Banner.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Main.java" tooltip="designpattern/src/adapter/transfer/Main.java">
+<persistable path="/designpattern/src/adapter/transfer/Main.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Main.java" tooltip="designpattern/src/iterator/Main.java">
 <persistable path="/designpattern/src/iterator/Main.java"/>
@@ -459,30 +296,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PrintBanner.java" tooltip="designpattern/src/adapter/inheritance/PrintBanner.java">
 <persistable path="/designpattern/src/adapter/inheritance/PrintBanner.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Print.java" tooltip="designpattern/src/adapter/inheritance/Print.java">
-<persistable path="/designpattern/src/adapter/inheritance/Print.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Banner.java" tooltip="designpattern/src/adapter/inheritance/Banner.java">
-<persistable path="/designpattern/src/adapter/inheritance/Banner.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.systemExternalEditor" name="GoF_Design_Pattern.xlsx" tooltip="designpattern/system design/GoF_Design_Pattern.xlsx">
-<persistable path="/designpattern/system design/GoF_Design_Pattern.xlsx"/>
-</file>
-<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="ArrayList.class" tooltip="java.util.ArrayList">
-<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=designpattern/C:\/Program Files\/Java\/jdk1.7.0_10\/jre\/lib\/rt.jar&lt;java.util(ArrayList.class"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Main.java" tooltip="designpattern/src/singleton/Main.java">
-<persistable path="/designpattern/src/singleton/Main.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BookShelfIterator.java" tooltip="designpattern/src/iterator/BookShelfIterator.java">
-<persistable path="/designpattern/src/iterator/BookShelfIterator.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BookShelf.java" tooltip="designpattern/src/iterator/BookShelf.java">
-<persistable path="/designpattern/src/iterator/BookShelf.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Book.java" tooltip="designpattern/src/iterator/Book.java">
-<persistable path="/designpattern/src/iterator/Book.java"/>
 </file>
 </mruList>
 </workbench>
