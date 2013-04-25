@@ -1,0 +1,43 @@
+package adapter.Q2_2;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.Properties;
+
+import com.sun.imageio.plugins.common.InputStreamAdapter;
+
+/**
+ * @author urushibata
+ * @version 1.0
+ */
+public class FileProperties extends Properties implements FileIO{
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -5545931041951877836L;
+
+	@Override
+	public void readFromFile(String filename) throws IOException {
+		load(new FileInputStream(filename));
+	}
+
+	@Override
+	public void writeToFile(String filename) throws IOException {
+		store(new FileOutputStream(new File("/resource/adapterQ2_2.onput.txt")),"write output file");
+	}
+
+	@Override
+	public void setValue(String key, String value) {
+		// TODO 自動生成されたメソッド・スタブ
+		
+	}
+
+	@Override
+	public String getValue(String key) {
+		// TODO 自動生成されたメソッド・スタブ
+		return null;
+	}
+}

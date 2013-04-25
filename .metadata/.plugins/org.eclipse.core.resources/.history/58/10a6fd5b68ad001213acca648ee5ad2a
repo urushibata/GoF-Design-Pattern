@@ -1,0 +1,43 @@
+package adapter.Q2_2;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.Properties;
+
+/**
+ * @author urushibata
+ * @version 1.0
+ */
+public class FileProperties implements FileIO{
+
+	@Override
+	public void readFromFile(String filename) throws IOException {
+		Properties properties = new Properties();
+		properties.load(new InputStream() {
+			
+			@Override
+			public int read() throws IOException {
+				// TODO 自動生成されたメソッド・スタブ
+				return 0;
+			}
+		});
+	}
+
+	@Override
+	public void writeToFile(String filename) throws IOException {
+		// TODO 自動生成されたメソッド・スタブ
+		
+	}
+
+	@Override
+	public void setValue(String key, String value) {
+		// TODO 自動生成されたメソッド・スタブ
+		
+	}
+
+	@Override
+	public String getValue(String key) {
+		// TODO 自動生成されたメソッド・スタブ
+		return null;
+	}
+}

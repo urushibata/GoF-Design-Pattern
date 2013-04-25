@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package adapter.Q2_2;
+
+/**
+ * @author urushibata
+ *
+ */
+public interface FileIO {
+
+}
