@@ -1,0 +1,12 @@
+package prototype;
+
+/**
+ * @author urushibata
+ * @version 1.0
+ */
+public class Manager {
+	private HashMap showcase = new HashMap();
+	public void register(String name, Product proto){
+		this.showcase.put(name, proto);
+	}
+}

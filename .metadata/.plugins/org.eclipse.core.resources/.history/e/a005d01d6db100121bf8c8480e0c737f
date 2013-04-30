@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package prototype;
+
+/**
+ * @author urushibata
+ *
+ */
+public interface Product extends Cloneable {
+
+}

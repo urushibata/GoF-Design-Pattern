@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package templateMethod;
+
+/**
+ * @author urushibata
+ *
+ */
+public abstract class AbstractDisplay {
+
+}

@@ -1,0 +1,12 @@
+package prototype;
+
+/**
+ * @author urushibata
+ * @version 1.0
+ */
+public class MassageBox implements Product{
+	private private char decochar;
+	public MessageBox(char decochar){
+		
+	}
+}

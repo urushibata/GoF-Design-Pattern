@@ -1,0 +1,39 @@
+/**
+ * 
+ */
+package templateMethod;
+
+/**
+ * @author urushibata
+ *
+ */
+public class CharDisplay extends AbstractDisplay {
+
+	/* (非 Javadoc)
+	 * @see templateMethod.AbstractDisplay#open()
+	 */
+	@Override
+	public void open() {
+		// TODO 自動生成されたメソッド・スタブ
+
+	}
+
+	/* (非 Javadoc)
+	 * @see templateMethod.AbstractDisplay#print()
+	 */
+	@Override
+	public void print() {
+		// TODO 自動生成されたメソッド・スタブ
+
+	}
+
+	/* (非 Javadoc)
+	 * @see templateMethod.AbstractDisplay#close()
+	 */
+	@Override
+	public void close() {
+		// TODO 自動生成されたメソッド・スタブ
+
+	}
+
+}
