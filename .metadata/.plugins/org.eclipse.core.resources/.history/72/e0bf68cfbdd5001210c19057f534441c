@@ -1,0 +1,30 @@
+package observer;
+
+import java.util.Random;
+
+/**
+ *
+ * @author urushibata
+ * @version 1.0
+ */
+public class RandomNumberGenerator extends NumberGenerator {
+
+	private Random random = new Random();
+	private int number;
+	/* (非 Javadoc)
+	 * @see observer.NumberGenerator#getNumber()
+	 */
+	@Override
+	public int getNumber() {
+		return this.number;
+	}
+
+	/* (非 Javadoc)
+	 * @see observer.NumberGenerator#execute()
+	 */
+	@Override
+	public void execute() {
+		// TODO 自動生成されたメソッド・スタブ
+
+	}
+}

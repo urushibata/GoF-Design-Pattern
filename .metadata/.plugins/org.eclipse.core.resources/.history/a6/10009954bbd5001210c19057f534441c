@@ -1,0 +1,9 @@
+package observer;
+
+/**
+ * @author urush_000
+ *
+ */
+public abstract class NumberGenerator {
+
+}

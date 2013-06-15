@@ -1,0 +1,9 @@
+package observer;
+
+/**
+ * @author urush_000
+ *
+ */
+public interface Observer {
+	public abstract void update(NumberGeneratore generator);
+}

@@ -1,0 +1,19 @@
+package observer;
+
+/**
+ *
+ * @author urushibata
+ * @version 1.0
+ */
+public class GraphObserver implements Observer {
+
+	/* (非 Javadoc)
+	 * @see observer.Observer#update(observer.NumberGenerator)
+	 */
+	@Override
+	public void update(NumberGenerator generator) {
+		System.out.println("GraphObserver:");
+		int count = generator.getNumber();
+	}
+
+}

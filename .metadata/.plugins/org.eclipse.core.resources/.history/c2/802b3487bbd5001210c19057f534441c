@@ -1,0 +1,10 @@
+package observer;
+
+/**
+ *
+ * @author urushibata
+ * @version 1.0
+ */
+public abstract class NumberGenerator {
+
+}

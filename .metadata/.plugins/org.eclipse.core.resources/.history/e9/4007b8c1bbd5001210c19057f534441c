@@ -1,0 +1,15 @@
+package observer;
+
+import java.util.ArrayList;
+
+/**
+ *
+ * @author urushibata
+ * @version 1.0
+ */
+public abstract class NumberGenerator {
+	public ArrayList<Observer> observers = new ArrayList<Observer>();
+	public void addObserver(Observer observer){
+		this.observers.add(observer);
+	}
+}

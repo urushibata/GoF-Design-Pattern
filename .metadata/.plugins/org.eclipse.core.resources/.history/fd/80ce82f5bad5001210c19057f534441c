@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package observer;
+
+/**
+ * @author urush_000
+ *
+ */
+public interface Observer {
+
+}
