@@ -1,0 +1,24 @@
+package prototype;
+
+import prototype.framework.Manager;
+
+/**
+ * @author urushibata
+ *
+ */
+public class Main {
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		Manager manager = new Manager();
+		UnderlinePen upen = new UnderlinePen('~');
+		MessageBox mbox = new MessageBox('*');
+		MessageBox sbox = new MessageBox('/');
+		manager.register("string message", upen);
+		manager.register("warning box", mbox);
+
+
+
+	}
+}

@@ -16,7 +16,6 @@ public class PrintBanner extends Banner implements Print{
 	}
 
 	/**
-	 * @param string
 	 * @since 1.0
 	 */
 	@Override
@@ -25,7 +24,6 @@ public class PrintBanner extends Banner implements Print{
 	}
 
 	/**
-	 * @param string
 	 * @since 1.0
 	 */
 	@Override

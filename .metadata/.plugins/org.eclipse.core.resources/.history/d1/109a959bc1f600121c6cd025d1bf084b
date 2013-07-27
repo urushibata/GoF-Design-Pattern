@@ -1,0 +1,23 @@
+package prototype;
+
+/**
+ * @author urushibata
+ *
+ */
+public class Main {
+
+	/**
+	 *
+	 */
+	public Main() {
+		// TODO 自動生成されたコンストラクター・スタブ
+	}
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO 自動生成されたメソッド・スタブ
+
+	}
+}

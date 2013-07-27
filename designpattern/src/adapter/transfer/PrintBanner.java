@@ -17,7 +17,6 @@ public class PrintBanner extends Print{
 	}
 
 	/**
-	 * @param string
 	 * @since 1.0
 	 */
 	@Override
@@ -26,7 +25,6 @@ public class PrintBanner extends Print{
 	}
 
 	/**
-	 * @param string
 	 * @since 1.0
 	 */
 	@Override

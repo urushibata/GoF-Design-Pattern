@@ -1,0 +1,47 @@
+/**
+ * 
+ */
+package prototype;
+
+import prototype.framework.Product;
+
+/**
+ * @author urush_000
+ *
+ */
+public class UnderlinePen implements Product {
+
+	/**
+	 * 
+	 */
+	public UnderlinePen() {
+		// TODO 自動生成されたコンストラクター・スタブ
+	}
+
+	/* (非 Javadoc)
+	 * @see prototype.framework.Product#use(java.lang.String)
+	 */
+	@Override
+	public void use(String s) {
+		// TODO 自動生成されたメソッド・スタブ
+
+	}
+
+	/* (非 Javadoc)
+	 * @see prototype.framework.Product#createClone()
+	 */
+	@Override
+	public Product createClone() {
+		// TODO 自動生成されたメソッド・スタブ
+		return null;
+	}
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO 自動生成されたメソッド・スタブ
+
+	}
+
+}

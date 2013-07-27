@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="型 &apos;prototype.MassageBox&apos; を &apos;MessageBox&apos; に名前変更します&#x0D;&#x0A;- 元のプロジェクト: &apos;designpattern&apos;&#x0D;&#x0A;- オリジナル要素: &apos;prototype.MassageBox&apos;&#x0D;&#x0A;- 名前変更済み要素: &apos;prototype.MessageBox&apos;&#x0D;&#x0A;- リファクタリングされた要素の参照を更新&#x0D;&#x0A;- コメントおよびストリング内のテキスト出現箇所の更新" description="型名 &apos;MassageBox&apos; を変更します" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;prototype{MassageBox.java[MassageBox" matchStrategy="1" name="MessageBox" qualified="false" references="true" similarDeclarations="false" stamp="1374932463178" textual="true" version="1.0"/>
+</session>

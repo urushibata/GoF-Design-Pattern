@@ -1,8 +1,5 @@
 /**
- * 
- */
-/**
- * @author urush_000
- *
+ * Observer パターン
+ * @author urushbata
  */
 package observer;

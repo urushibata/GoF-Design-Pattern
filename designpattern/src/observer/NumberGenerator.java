@@ -1,11 +1,10 @@
 package observer;
 
-
 import java.util.ArrayList;
 import java.util.Iterator;
 
 /**
- *
+ * NumberGenerator抽象クラス
  * @author urushibata
  * @version 1.0
  */

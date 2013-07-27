@@ -18,7 +18,7 @@ public class MassageBox implements Product{
 
 	@Override
 	public void use(String s) {
-		
+		int length = s.getBytes().length;
 	}
 	@Override
 	public Product createClone() {

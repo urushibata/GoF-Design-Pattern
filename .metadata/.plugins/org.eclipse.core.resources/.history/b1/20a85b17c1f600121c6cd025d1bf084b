@@ -1,0 +1,44 @@
+package prototype;
+
+import prototype.framework.Product;
+
+/**
+ * @author urushibata
+ *
+ */
+public class UnderlinePen implements Product {
+	private char ulchar;
+
+	/**
+	 * コンストラクタ
+	 */
+	public UnderlinePen(char ulchar) {
+		this.ulchar = ulchar;
+	}
+
+	/* (非 Javadoc)
+	 * @see prototype.framework.Product#use(java.lang.String)
+	 */
+	@Override
+	public void use(String s) {
+		int length = s.getBytes().length;
+		System.out.println("\"" + s + "\"");
+	}
+
+	/* (非 Javadoc)
+	 * @see prototype.framework.Product#createClone()
+	 */
+	@Override
+	public Product createClone() {
+		// TODO 自動生成されたメソッド・スタブ
+		return null;
+	}
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO 自動生成されたメソッド・スタブ
+
+	}
+}
